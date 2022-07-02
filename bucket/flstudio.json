@@ -1,0 +1,20 @@
+{
+  "description": "FL STUDIO",
+  "homepage": "https://www.image-line.com/fl-studio/",
+  "version": "20.9.2.2963",
+  "license": [
+    {
+      "identifier": "Proprietary",
+      "url": "https://www.image-line.com/fl-studio/compare-editions/"
+    }
+  ],
+  "url": "https://support.image-line.com/redirect/flstudio20_win_installer#/flstudio_win64_20.9.2.2963.exe",
+  "hash": "0af2ebe4f6eff8fb35eba8e3ee23fddd10205f11dd2ce7953503504446fcbe14",
+  "post_install": [
+    "cmd /c \"${dir}\\flstudio_win64_20.9.2.2963.exe\""
+  ],
+  "pre_uninstall": [
+    "$uninstaller=(Get-ItemProperty -Path \"Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\FL Studio 20\" | Select-Object -ExpandProperty UninstallString)",
+    "cmd /c \"${uninstaller}\""
+  ]
+}
