@@ -1,0 +1,23 @@
+{
+  "description": "九州そら　連続音",
+  "homepage": "https://zunko.jp/con_voice.html#chiho_utau",
+  "version": "1.0",
+  "license": [
+    {
+      "identifier": "Proprietary",
+      "url": "https://zunko.jp/guideline.html"
+    }
+  ],
+  "url": "https://zunko.jp/sozai/utau/KyushuSora.zip",
+  "hash": "30c38bb32fbe39e275628e5efb7e069392d733bb5243f820488663933426caad",
+  "extract_to": "voice",
+  "suggest": {
+    "UTAU": ["utau", "dtm/utau"]
+  },
+  "post_install": [
+    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\""
+  ],
+  "pre_uninstall": [
+    "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\九州そら\""
+  ]
+}

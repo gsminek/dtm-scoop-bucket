@@ -1,0 +1,23 @@
+{
+  "description": "中国うさぎ　連続音",
+  "homepage": "https://zunko.jp/con_voice.html#chiho_utau",
+  "version": "1.0",
+  "license": [
+    {
+      "identifier": "Proprietary",
+      "url": "https://zunko.jp/guideline.html"
+    }
+  ],
+  "url": "https://zunko.jp/sozai/utau/ChugokuUsagi.zip",
+  "hash": "a44313f6c68a90f86742b95dd039d5cf2ea2241e0d7844d8b1d996e4240340fb",
+  "extract_to": "voice",
+  "suggest": {
+    "UTAU": ["utau", "dtm/utau"]
+  },
+  "post_install": [
+    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\""
+  ],
+  "pre_uninstall": [
+    "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\中国うさぎ\""
+  ]
+}

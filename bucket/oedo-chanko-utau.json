@@ -1,0 +1,23 @@
+{
+  "description": "大江戸ちゃんこ　連続音",
+  "homepage": "https://zunko.jp/con_voice.html#daitokai_utau",
+  "version": "1.0",
+  "license": [
+    {
+      "identifier": "Proprietary",
+      "url": "https://zunko.jp/guideline.html"
+    }
+  ],
+  "url": "https://zunko.jp/sozai/utau/OedoChanko.zip",
+  "hash": "33a422aa3e37db20b69e4e70537e9fa89fdda18476d2dc9d325cb8bf06bb5766",
+  "extract_to": "voice",
+  "suggest": {
+    "UTAU": ["utau", "dtm/utau"]
+  },
+  "post_install": [
+    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\大江戸ちゃんこ(連続音)\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\""
+  ],
+  "pre_uninstall": [
+    "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\大江戸ちゃんこ(連続音)\""
+  ]
+}

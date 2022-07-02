@@ -1,0 +1,23 @@
+{
+  "description": "ずんだもん　連続音",
+  "homepage": "https://zunko.jp/con_voice.html#zmon_utau",
+  "version": "1.0",
+  "license": [
+    {
+      "identifier": "Proprietary",
+      "url": "https://zunko.jp/guideline.html"
+    }
+  ],
+  "url": "https://zunko.jp/sozai/utau/Zundamon.zip",
+  "hash": "3d2655508cfd7c8d2ad11fcb2332d43c48818bb33b972eb7ae24dd3ddd7374f8",
+  "extract_to": "voice",
+  "suggest": {
+    "UTAU": ["utau", "dtm/utau"]
+  },
+  "post_install": [
+    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\""
+  ],
+  "pre_uninstall": [
+    "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\ずんだもん(連続音)\""
+  ]
+}
