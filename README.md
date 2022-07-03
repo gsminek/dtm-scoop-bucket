@@ -20,3 +20,8 @@ DTM や音声合成ソフトウェアの [Scoop](https://scoop.sh) バケツで�
     ```powershell
     > scoop bucket add dtm https://github.com/gsminek/dtm-scoop-bucket.git
     ```
+
+## 留意事項
+
+- インストールで手動操作が必要になることがあります。
+- アンインストールは適切に行われない場合があります。その時は、コントロールパネルなどから手動でアンインストールを行ってください。
