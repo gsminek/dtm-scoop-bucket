@@ -12,10 +12,14 @@
   "hash": "30c38bb32fbe39e275628e5efb7e069392d733bb5243f820488663933426caad",
   "extract_to": "voice",
   "suggest": {
-    "UTAU": ["utau", "dtm/utau"]
+    "UTAU": [
+      "utau",
+      "dtm/utau"
+    ]
   },
   "post_install": [
-    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\""
+    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+    "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\九州そら\""
   ],
   "pre_uninstall": [
     "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\九州そら\""

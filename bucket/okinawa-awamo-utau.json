@@ -12,10 +12,14 @@
   "hash": "fdd9554a3e139dd5222b9325ebde6ef009d9ca7b7a4cb55c1240a595fb1eb303",
   "extract_to": "voice",
   "suggest": {
-    "UTAU": ["utau", "dtm/utau"]
+    "UTAU": [
+      "utau",
+      "dtm/utau"
+    ]
   },
   "post_install": [
-    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\沖縄あわも(連続音)\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\""
+    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\沖縄あわも(連続音)\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+    "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\沖縄あわも(連続音)\""
   ],
   "pre_uninstall": [
     "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\沖縄あわも(連続音)\""

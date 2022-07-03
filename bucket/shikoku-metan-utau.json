@@ -12,10 +12,14 @@
   "hash": "e02e705043e169372a0b3df888bde0086bd752aa67c7a62bf8819496d9a8a697",
   "extract_to": "voice",
   "suggest": {
-    "UTAU": ["utau", "dtm/utau"]
+    "UTAU": [
+      "utau",
+      "dtm/utau"
+    ]
   },
   "post_install": [
-    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\四国めたん\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\""
+    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\四国めたん\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+    "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\四国めたん\""
   ],
   "pre_uninstall": [
     "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\四国めたん\""

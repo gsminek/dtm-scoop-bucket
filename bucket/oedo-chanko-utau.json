@@ -12,10 +12,14 @@
   "hash": "33a422aa3e37db20b69e4e70537e9fa89fdda18476d2dc9d325cb8bf06bb5766",
   "extract_to": "voice",
   "suggest": {
-    "UTAU": ["utau", "dtm/utau"]
+    "UTAU": [
+      "utau",
+      "dtm/utau"
+    ]
   },
   "post_install": [
-    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\大江戸ちゃんこ(連続音)\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\""
+    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\大江戸ちゃんこ(連続音)\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+    "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\大江戸ちゃんこ(連続音)\""
   ],
   "pre_uninstall": [
     "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\大江戸ちゃんこ(連続音)\""
