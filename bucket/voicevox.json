@@ -1,0 +1,31 @@
+{
+  "description": "VOICEVOX GPU/CPU",
+  "homepage": "https://voicevox.hiroshiba.jp/",
+  "version": "0.12.3",
+  "notes": "インストーラーの利用が公式により推奨されています。",
+  "license": [
+    {
+      "identifier": "Proprietary"
+    }
+  ],
+  "url": [
+    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.3/VOICEVOX.Web.Setup.0.12.3.exe",
+    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.3/voicevox-0.12.3-x64.nsis.7z.0",
+    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.3/voicevox-0.12.3-x64.nsis.7z.1"
+  ],
+  "hash": [
+    "260abb91bd5d58569a09d78aad75b00b3d2740137dc9bd3c974cac1fbccfc4a1",
+    "2974e942a1b2ba823c31b22901314b9d940e9212999d20368abbf325b9ab4796",
+    "3edb1251d3a71bef9ce0e471aa927af627d3dd9c5aab6302ce65f31cba7c4d90"
+  ],
+  "installer": {
+    "file": "VOICEVOX.Web.Setup.0.12.3.exe"
+  },
+  "pre_uninstall": [
+    "$uninstaller=(Get-ItemProperty -Path \"Registry::HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\92713bbc-5c5b-5df6-b6d1-5b09e302bf58\" | Select-Object -ExpandProperty UninstallString)",
+    "if([string]::IsNullOrEmpty($uninstaller)){",
+    " $uninstaller=(Get-ItemProperty -Path \"Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\92713bbc-5c5b-5df6-b6d1-5b09e302bf58\" | Select-Object -ExpandProperty UninstallString)",
+    "}",
+    "cmd /c \"${uninstaller}\""
+  ]
+}
