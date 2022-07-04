@@ -30,6 +30,6 @@
     "msiexec /i $dir\\utaustup.msi /passive /norestart MSIINSTALLPERUSER=1 TARGETDIR=\"$dir\\utau\""
   ],
   "pre_uninstall": [
-    "msiexec /x $dir\\utaustup.msi /passive /norestart"
+    "Start-Process -Wait -NoNewWindow -FilePath \"msiexec\" -ArgumentList \"/x $dir\\utaustup.msi /passive /norestart\""
   ]
 }
