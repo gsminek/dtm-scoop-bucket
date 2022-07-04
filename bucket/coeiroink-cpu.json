@@ -1,0 +1,36 @@
+{
+  "version": "1.5.0",
+  "description": "COEIROINK CPU",
+  "homepage": "https://coeiroink.com/",
+  "license": [
+    {
+      "identifier": "Proprietary",
+      "url": "https://coeiroink.com/terms"
+    }
+  ],
+  "notes": "ダウンロード・インストールに長時間かかります。",
+  "url": "https://coeiroink.com/terms#/terms.html",
+  "hash": "ce896fd18f99455204d1b6ba43cb7ae9b255320f47396c64e6d2588ec3128841",
+  "installer": {
+    "script": [
+      "$id = \"18uVzqMVSSIuhCaGqZ7O_a1j9_760AVF2\"",
+      "$file = $cachedir + \"\\coeiroink-cpu#1.5.0COEIROINK-CPU-v.1.5.0.zip\"",
+      "Write-Host Check cachee file $file",
+      "if(-not(Test-Path -Path $file -PathType Leaf)){",
+      "   Write-Host Download file $id from Google Drive",
+      "   $response = Invoke-WebRequest -Uri \"https://drive.google.com/uc?export=download&id=${id}\"",
+      "   if($response -match 'id=\"downloadForm\" action=\"([^\"]+)\" method=\"post\"'){",
+      "       $url = $matches[1].Replace(\"&amp;\",\"&\")",
+      "       Invoke-WebRequest -Uri $url -OutFile $file",
+      "   }",
+      "}",
+      "Expand-Archive -Path $file -DestinationPath $dir"
+    ]
+  },
+  "shortcuts": [
+    [
+      "COEIROINK-CPU-v.1.5.0\\COEIROINKonVOICEVOX.exe",
+      "COEIROINK on VOICEVOX"
+    ]
+  ]
+}
