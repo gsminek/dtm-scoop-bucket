@@ -1,0 +1,19 @@
+{
+  "version": "1.93.56",
+  "homepage": "https://w.atwiki.jp/softalk/pages/15.html",
+  "description": "SofTalk",
+  "license": [
+    {
+      "identifier": "Freeware"
+    }
+  ],
+  "url": "https://ftp.vector.co.jp/75/21/2252/stn019356.zip",
+  "hash": "3b95f939b8af643f78f0b5329c3c0294f8ca809915206f8d9aff0dcc0282c9fb",
+  "extract_dir": "softalk",
+  "shortcuts": [
+    [
+      "SofTalk.exe",
+      "SofTalk"
+    ]
+  ]
+}
