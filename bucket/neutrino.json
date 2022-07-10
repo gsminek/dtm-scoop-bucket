@@ -1,0 +1,56 @@
+{
+  "version": "1.1.0",
+  "description": "NEUTRINO",
+  "homepage": "https://studio-neutrino.com/",
+  "license": [
+    {
+      "identifier": "Proprietary"
+    }
+  ],
+  "notes": [
+    "ダウンロード・インストールに長時間かかります。ダウンロードに失敗した場合は最初からのダウンロードになります。",
+    "ブラウザでダウンロードしたファイルを scoop\\cache ディレクトリに配置するほうが確実です。"
+  ],
+  "url": "https://studio-neutrino.com/",
+  "hash": "05833999e91b3d5dfa9b8bbb30e15b8dfa6d11699459c23c1fe91f57702fdb1e",
+  "installer": {
+    "script": [
+      "$id = \"16hSl4s3IwEAlJjnKbIFyoFGR6B8i9eG8\"",
+      "$filename = \"NEUTRINO-Windows-v1.1.0.zip\"",
+      "$hash =\"f00a41012ed782648875b1b37d23fad75dad69181dbe18f012d6f91bdaa082f6\"",
+      "$file = $cachedir + \"\\\" + $filename",
+      "if(Test-Path -Path $file -PathType Leaf){",
+      "   Write-Host \"Checking hash of $file ... \" -NoNewline",
+      "   $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
+      "   if([string]::IsNullOrEmpty($hash)){",
+      "     Write-Host \"skip\" -ForegroundColor Yellow",     
+      "     Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
+      "     Write-Host \"    $filehash\" -ForegroundColor Yellow",
+      "   }else{",
+      "     if($hash -eq $filehash){",
+      "         Write-Host \"ok\" -ForegroundColor Green",     
+      "       }else{",
+      "         Write-Host \"error\" -ForegroundColor Red",     
+      "         Write-Warning \"Warning: Cache file corrupted for '${filename}'\"",
+      "         Remove-Item -Path $file -Force",
+      "     }",
+      "   }",
+      "}",
+      "if(-not(Test-Path -Path $file -PathType Leaf)){",
+      "   Write-Host Download file $id from Google Drive",
+      "   $response = Invoke-WebRequest -Uri \"https://drive.google.com/uc?export=download&id=${id}\"",
+      "   if($response -match 'id=\"downloadForm\" action=\"([^\"]+)\" method=\"post\"'){",
+      "       $url = $matches[1].Replace(\"&amp;\",\"&\")",
+      "       Invoke-WebRequest -Uri $url -OutFile $file",
+      "   }",
+      "}",
+      "Expand-Archive -Path $file -DestinationPath $dir"
+    ]
+  },
+  "persist": [
+    "NEUTRINO\\model",
+    "NEUTRINO\\output",
+    "NEUTRINO\\score",
+    "NEUTRINO\\settings"
+  ]
+}
