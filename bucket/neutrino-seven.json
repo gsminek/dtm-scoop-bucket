@@ -1,0 +1,65 @@
+{
+  "version": "1.1.0",
+  "description": "No.7 NEUTRINO 歌声ライブラリ",
+  "homepage": "https://studio-neutrino.com/",
+  "license": [
+    {
+      "identifier": "Proprietary"
+    }
+  ],
+  "notes": [
+    "ダウンロード・インストールに長時間かかります。ダウンロードに失敗した場合は最初からのダウンロードになります。",
+    "ブラウザでダウンロードしたファイルを scoop\\cache ディレクトリに配置するほうが確実です。"
+  ],
+  "url": "https://studio-neutrino.com/535/",
+  "hash": "01afaee98cdc2bb5b2a98ab6a1720574ab39938b1868887d35b5eba8e8e131da",
+  "installer": {
+    "script": [
+      "$id = \"1NaE6YPUtdX58kW4iyfsCG6-2A3-ePnlc\"",
+      "$filename = \"No.7（NEUTRINO-Library）-v1.1.0.zip\"",
+      "$hash =\"ac6423062327a63df3df3891f36b4fb7c3a633833891351bf39ea9430a84051d\"",
+      "$model_dir =\"No.7（NEUTRINO-Library）\\SEVEN\"",
+      "$file = $cachedir + \"\\\" + $filename",
+      "if(Test-Path -Path $file -PathType Leaf){",
+      "   Write-Host \"Checking hash of $file ... \" -NoNewline",
+      "   $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
+      "   if([string]::IsNullOrEmpty($hash)){",
+      "     Write-Host \"skip\" -ForegroundColor Yellow",
+      "     Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
+      "     Write-Host \"    $filehash\" -ForegroundColor Yellow",
+      "   }else{",
+      "     if($hash -eq $filehash){",
+      "       Write-Host \"ok\" -ForegroundColor Green",
+    "       }else{",
+      "       Write-Host \"error\" -ForegroundColor Red",
+      "       Write-Warning \"Warning: Cache file corrupted for '${filename}'\"",
+      "       Remove-Item -Path $file -Force",
+      "     }",
+      "   }",
+      "}",
+      "if(-not(Test-Path -Path $file -PathType Leaf)){",
+      "   Write-Host Download file $id from Google Drive",
+      "   $response = Invoke-WebRequest -Uri \"https://drive.google.com/uc?export=download&id=${id}\"",
+      "   if($response -match 'id=\"downloadForm\" action=\"([^\"]+)\" method=\"post\"'){",
+      "       $url = $matches[1].Replace(\"&amp;\",\"&\")",
+      "       Invoke-WebRequest -Uri $url -OutFile \"${file}.tmp\"",
+      "       Rename-Item -Path \"${file}.tmp\" -NewName $filename",
+      "       if([string]::IsNullOrEmpty($hash)){",
+      "         $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
+      "         Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
+      "         Write-Host \"    $filehash\" -ForegroundColor Yellow",
+      "       }",
+      "   }",
+      "}",
+      "Expand-Archive -Path $file -DestinationPath $dir",
+      "Copy-Item -Force -Recurse -Path \"${dir}\\${model_dir}\" -Destination \"${persist_dir}\\..\\neutrino\\NEUTRINO\\model\"",
+      "Remove-Item -Force -Recurse -Path \"${dir}\\${model_dir}\""
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$model =\"SEVEN\"",
+      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\neutrino\\NEUTRINO\\model\\${model}\""
+    ]
+  }
+}
