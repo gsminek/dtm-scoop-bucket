@@ -16,9 +16,12 @@
   "url": "https://www.ah-soft.com/trial/synthesizer_v_kotonoha_lite.zip",
   "hash": "7e036fb1e0bb0f80d9185a394a3b2f16c541446b4b545c3328241d20bde7eaa9",
   "extract_dir": "Synthesizer V Kotonoha Lite",
-  "suggest": [
-    "synthesizer-v-basic"
-  ],
+  "suggest": {
+    "Synthesizer V": [
+      "synthesizer-v-basic",
+      "dtm/synthesizer-v-basic"
+    ]
+  },
   "installer": {
     "script": [
       "$svpk = $dir + \"\\kotonoha-lite-install.svpk\"",

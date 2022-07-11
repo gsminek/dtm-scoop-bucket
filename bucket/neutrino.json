@@ -29,7 +29,7 @@
       "   }else{",
       "     if($hash -eq $filehash){",
       "         Write-Host \"ok\" -ForegroundColor Green",     
-      "       }else{",
+      "     }else{",
       "         Write-Host \"error\" -ForegroundColor Red",     
       "         Write-Warning \"Warning: Cache file corrupted for '${filename}'\"",
       "         Remove-Item -Path $file -Force",

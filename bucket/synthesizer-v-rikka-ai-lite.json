@@ -16,9 +16,12 @@
   "url": "https://www.ah-soft.com/trial/synthesizer_v_rikka_ai_lite.zip",
   "hash": "aa29db023ef8bca4bbf88c5b876fd2d58dd4cd2872efc82fbc1286327a2024b7",
   "extract_dir": "Synthesizer V Rikka AI Lite",
-  "suggest": [
-    "synthesizer-v-basic"
-  ],
+  "suggest": {
+    "Synthesizer V": [
+      "synthesizer-v-basic",
+      "dtm/synthesizer-v-basic"
+    ]
+  },
   "installer": {
     "script": [
       "$svpk = $dir + \"\\rikka-ai-lite-install.svpk\"",

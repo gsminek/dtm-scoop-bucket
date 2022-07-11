@@ -16,9 +16,12 @@
   "url": "https://www.ah-soft.com/trial/synthesizer_v_ai_tsuina_lite.zip",
   "hash": "456f959dcd7c1a645376bf44bef71b7d5796727492ca3e5580feabd17a31313d",
   "extract_dir": "Synthesizer V AI Tsuina Lite",
-  "suggest": [
-    "synthesizer-v-basic"
-  ],
+  "suggest": {
+    "Synthesizer V": [
+      "synthesizer-v-basic",
+      "dtm/synthesizer-v-basic"
+    ]
+  },
   "installer": {
     "script": [
       "$svpk = $dir + \"\\tsuina-ai-lite-install.svpk\"",

@@ -16,9 +16,12 @@
   "url": "https://www.ah-soft.com/trial/synthesizer_v_maki_ai_lite.zip",
   "hash": "55685a45e2492add4fbe3e2fc55efe157e7c1bb9d6e1f242516b5ff2ad45fb89",
   "extract_dir": "Synthesizer V Maki AI Lite",
-  "suggest": [
-    "synthesizer-v-basic"
-  ],
+  "suggest": {
+    "Synthesizer V": [
+      "synthesizer-v-basic",
+      "dtm/synthesizer-v-basic"
+    ]
+  },
   "installer": {
     "script": [
       "$svpk = $dir + \"\\maki-ai-jpn-lite-installer.svpk\"",

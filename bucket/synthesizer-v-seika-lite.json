@@ -16,9 +16,12 @@
   "url": "https://www.ah-soft.com/trial/synthesizer_v_seika_lite.zip",
   "hash": "f6a8349c54def70a35bfd86d7c1c5c7f79f8bc3bd36809df21aac6ac2986af06",
   "extract_dir": "Synthesizer V Seika Lite",
-  "suggest": [
-    "synthesizer-v-basic"
-  ],
+  "suggest": {
+    "Synthesizer V": [
+      "synthesizer-v-basic",
+      "dtm/synthesizer-v-basic"
+    ]
+  },
   "installer": {
     "script": [
       "$svpk = $dir + \"\\seika-std-lite-installer.svpk\"",

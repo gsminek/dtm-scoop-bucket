@@ -7,6 +7,12 @@
       "identifier": "Proprietary"
     }
   ],
+  "suggest": {
+    "NEUTRINO": [
+      "neutrino",
+      "dtm/neutrino"
+    ]
+  },
   "notes": [
     "ダウンロード・インストールに長時間かかります。ダウンロードに失敗した場合は最初からのダウンロードになります。",
     "ブラウザでダウンロードしたファイルを scoop\\cache ディレクトリに配置するほうが確実です。"
@@ -30,7 +36,7 @@
       "   }else{",
       "     if($hash -eq $filehash){",
       "       Write-Host \"ok\" -ForegroundColor Green",
-    "       }else{",
+      "     }else{",
       "       Write-Host \"error\" -ForegroundColor Red",
       "       Write-Warning \"Warning: Cache file corrupted for '${filename}'\"",
       "       Remove-Item -Path $file -Force",

@@ -16,9 +16,12 @@
   "url": "https://www.ah-soft.com/trial/synthesizer_v_maki_english_ai_lite.zip",
   "hash": "2e9d9f52cffbd974aa12c761d95a1e1ff571ebebc863b54af4a9d5d73dc526f8",
   "extract_dir": "Synthesizer V Maki English AI Lite",
-  "suggest": [
-    "synthesizer-v-basic"
-  ],
+  "suggest": {
+    "Synthesizer V": [
+      "synthesizer-v-basic",
+      "dtm/synthesizer-v-basic"
+    ]
+  },
   "installer": {
     "script": [
       "$svpk = $dir + \"\\maki-ai-eng-lite-installer.svpk\"",

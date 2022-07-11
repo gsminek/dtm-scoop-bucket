@@ -16,9 +16,12 @@
   "url": "https://www.ah-soft.com/trial/synthesizer_v_saki_lite.zip",
   "hash": "3a2bff4807d0ddc5a6b5add52e7028e91a134ad196798f6ddf09d95d473d2c34",
   "extract_dir": "Synthesizer V Saki Lite",
-  "suggest": [
-    "synthesizer-v-basic"
-  ],
+  "suggest": {
+    "Synthesizer V": [
+      "synthesizer-v-basic",
+      "dtm/synthesizer-v-basic"
+    ]
+  },
   "installer": {
     "script": [
       "$svpk = $dir + \"\\saki-lite-install.svpk\"",
