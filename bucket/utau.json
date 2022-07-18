@@ -31,5 +31,9 @@
   ],
   "pre_uninstall": [
     "Start-Process -Wait -NoNewWindow -FilePath \"msiexec\" -ArgumentList \"/x $dir\\utaustup.msi /passive /norestart\""
-  ]
+  ],
+  "checkver": {
+    "url": "http://utau2008.xrea.jp/",
+    "regex": " v([\\d\\w.]+)</b></p>"
+  }
 }
