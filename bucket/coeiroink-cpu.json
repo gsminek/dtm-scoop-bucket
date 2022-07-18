@@ -14,14 +14,38 @@
   "installer": {
     "script": [
       "$id = \"18uVzqMVSSIuhCaGqZ7O_a1j9_760AVF2\"",
-      "$file = $cachedir + \"\\coeiroink-cpu#1.5.0COEIROINK-CPU-v.1.5.0.zip\"",
-      "Write-Host Check cachee file $file",
+      "$filename = \"coeiroink-cpu#1.5.0COEIROINK-CPU-v.1.5.0.zip\"",
+      "$hash =\"c8e96a181edd967ba4fe47d37fc4c2b31176e0fa0df650b72b78c357ad64de92\"",
+      "$file = $cachedir + \"\\\" + $filename",
+      "if(Test-Path -Path $file -PathType Leaf){",
+      "   Write-Host \"Checking hash of $file ... \" -NoNewline",
+      "   $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
+      "   if([string]::IsNullOrEmpty($hash)){",
+      "     Write-Host \"skip\" -ForegroundColor Yellow",
+      "     Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
+      "     Write-Host \"    $filehash\" -ForegroundColor Yellow",
+      "   }else{",
+      "     if($hash -eq $filehash){",
+      "       Write-Host \"ok\" -ForegroundColor Green",
+      "     }else{",
+      "       Write-Host \"error\" -ForegroundColor Red",
+      "       Write-Warning \"Warning: Cache file corrupted for '${filename}'\"",
+      "       Remove-Item -Path $file -Force",
+      "     }",
+      "   }",
+      "}",
       "if(-not(Test-Path -Path $file -PathType Leaf)){",
       "   Write-Host Download file $id from Google Drive",
       "   $response = Invoke-WebRequest -Uri \"https://drive.google.com/uc?export=download&id=${id}\"",
       "   if($response -match 'id=\"downloadForm\" action=\"([^\"]+)\" method=\"post\"'){",
       "       $url = $matches[1].Replace(\"&amp;\",\"&\")",
-      "       Invoke-WebRequest -Uri $url -OutFile $file",
+      "       Invoke-WebRequest -Uri $url -OutFile \"${file}.tmp\"",
+      "       Rename-Item -Path \"${file}.tmp\" -NewName $filename",
+      "       if([string]::IsNullOrEmpty($hash)){",
+      "         $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
+      "         Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
+      "         Write-Host \"    $filehash\" -ForegroundColor Yellow",
+      "       }",
       "   }",
       "}",
       "Expand-Archive -Path $file -DestinationPath $dir"
@@ -32,5 +56,9 @@
       "COEIROINK-CPU-v.1.5.0\\COEIROINKonVOICEVOX.exe",
       "COEIROINK on VOICEVOX"
     ]
-  ]
+  ],
+  "checkver": {
+    "url": "https://coeiroink.com/download",
+    "regex": "<p class=\"download-link\">COEIROINK-CPU-v.([\\d\\.]+)\\(Windows\\)</p>"
+  }
 }
