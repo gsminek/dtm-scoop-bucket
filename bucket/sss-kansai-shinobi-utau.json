@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "description": "関西しのび　連続音",
+  "description": "SSS 関西しのび　連続音",
   "homepage": "https://zunko.jp/con_voice.html#daitokai_utau",
   "license": [
     {
@@ -17,11 +17,17 @@
       "dtm/utau"
     ]
   },
-  "post_install": [
-    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\関西しのび\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
-    "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\関西しのび\""
-  ],
-  "pre_uninstall": [
-    "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\関西しのび\""
-  ]
+  "installer": {
+    "script": [
+      "$voice=\"関西しのび\"",
+      "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\${voice}\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+      "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\${voice}\""
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$voice=\"関西しのび\"",
+      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\""
+    ]
+  }
 }

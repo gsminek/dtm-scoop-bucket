@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "description": "九州そら　連続音",
+  "description": "SSS 九州そら　連続音",
   "homepage": "https://zunko.jp/con_voice.html#chiho_utau",
   "license": [
     {
@@ -17,11 +17,17 @@
       "dtm/utau"
     ]
   },
-  "post_install": [
-    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
-    "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\九州そら\""
-  ],
-  "pre_uninstall": [
-    "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\九州そら\""
-  ]
+  "installer": {
+    "script": [
+      "$voice=\"九州そら\"",
+      "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+      "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\${voice}\""
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$voice=\"九州そら\"",
+      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\""
+    ]
+  }
 }

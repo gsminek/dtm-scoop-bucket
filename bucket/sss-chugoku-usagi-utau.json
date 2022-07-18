@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "description": "中国うさぎ　連続音",
+  "description": "SSS 中国うさぎ　連続音",
   "homepage": "https://zunko.jp/con_voice.html#chiho_utau",
   "license": [
     {
@@ -17,11 +17,17 @@
       "dtm/utau"
     ]
   },
-  "post_install": [
-    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
-    "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\中国うさぎ\""
-  ],
-  "pre_uninstall": [
-    "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\中国うさぎ\""
-  ]
+  "installer": {
+    "script": [
+      "$voice=\"中国うさぎ\"",
+      "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+      "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\${voice}\""
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$voice=\"中国うさぎ\"",
+      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\""
+    ]
+  }
 }

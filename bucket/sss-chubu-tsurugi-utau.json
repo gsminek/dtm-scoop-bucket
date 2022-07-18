@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "description": "中部つるぎ　連続音",
+  "description": "SSS 中部つるぎ　連続音",
   "homepage": "https://zunko.jp/con_voice.html#daitokai_utau",
   "license": [
     {
@@ -17,11 +17,17 @@
       "dtm/utau"
     ]
   },
-  "post_install": [
-    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
-    "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\中部つるぎ\""
-  ],
-  "pre_uninstall": [
-    "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\中部つるぎ\""
-  ]
+  "installer": {
+    "script": [
+      "$voice=\"中部つるぎ\"",
+      "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+      "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\${voice}\""
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$voice=\"中部つるぎ\"",
+      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\""
+    ]
+  }
 }

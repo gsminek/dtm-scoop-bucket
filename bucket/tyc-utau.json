@@ -17,11 +17,17 @@
       "dtm/utau"
     ]
   },
-  "post_install": [
-    "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
-    "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\つくよみちゃんUTAU音源\""
-  ],
-  "pre_uninstall": [
-    "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\つくよみちゃんUTAU音源\""
-  ]
+  "installer": {
+    "script": [
+      "$voice=\"つくよみちゃんUTAU音源\"",
+      "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\*\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+      "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\${voice}\""
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$voice=\"つくよみちゃんUTAU音源\"",
+      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\""
+    ]
+  }
 }
