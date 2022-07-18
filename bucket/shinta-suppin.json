@@ -10,6 +10,12 @@
   ],
   "url": "https://www.dropbox.com/s/93dloof8ej30vab/SuppinPlugin201.zip?dl=1",
   "hash": "891ef48957a96a8b9fbdd49e6e8c0d05f89e620acf32c74faee3ac69bc3cfc6e",
+  "suggest": {
+    "UTAU": [
+      "utau",
+      "dtm/utau"
+    ]
+  },
   "installer": {
     "script": [
       "$plugin=\"すっぴんプラグイン\"",

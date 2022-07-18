@@ -10,6 +10,12 @@
   ],
   "url": "https://www.dropbox.com/s/udidmquo3eia6pl/UTALis433.zip?dl=1",
   "hash": "ee7cc04b97f4cf5ab70cff3ad33ee20ea896c2fff80bfda1328291204549912b",
+  "suggest": {
+    "UTAU": [
+      "utau",
+      "dtm/utau"
+    ]
+  },
   "extract_to": "UTALis",
   "installer": {
     "script": [

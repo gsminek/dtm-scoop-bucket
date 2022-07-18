@@ -10,6 +10,12 @@
   ],
   "url": "https://www.dropbox.com/s/07m9nz4m69akdwy/SaiLis223Beta.zip?dl=1",
   "hash": "16a883ded1232d1bc3d73bb8c50de7ac3554fbba6f27f080d686603364706b82",
+  "suggest": {
+    "UTAU": [
+      "utau",
+      "dtm/utau"
+    ]
+  },
   "extract_to": "SaiLis",
   "installer": {
     "script": [
