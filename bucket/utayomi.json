@@ -1,7 +1,7 @@
 {
   "version": "7.62",
   "homepage": "https://shinta.coresv.com/software/utayomi_jpn/",
-  "description": "唄詠",
+  "description": "SHINTA 唄詠",
   "license": [
     {
       "identifier": "CC-BY-NC-ND-2.1",
@@ -17,7 +17,7 @@
   "shortcuts": [
     [
       "UtaYomi.exe",
-      "唄詠"
+      "SHINTA 唄詠"
     ]
   ]
 }
