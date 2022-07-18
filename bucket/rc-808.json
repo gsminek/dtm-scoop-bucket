@@ -1,0 +1,42 @@
+{
+  "version": "1.08",
+  "description": "RC-808 Re-Create the 808",
+  "homepage": "https://rc-808.com/download/",
+  "license": [
+    {
+      "identifier": "Freeware"
+    }
+  ],
+  "notes": [
+    "プラグインは必要に応じて C:\\Program Files\\Common Files\\VST3 ディレクトリに移動してください。"
+  ],
+  "url": "https://rc-808.com/wp-content/uploads/2021/07/ReCreate-Win-with-PLG.zip",
+  "hash": "3a036e3fcb1b80cc10c317fdd746cd107757bcdba985267e261a6b5eb8d32d93",
+  "suggest": {
+    "LoopBe1": [
+      "loop-be-1",
+      "dtm/loop-be-1"
+    ]
+  },
+  "extract_dir": "ReCreate-Win with PLG",
+  "shortcuts": [
+    [
+      "RC-808\\RC-808.exe",
+      "RC-808 (Standalone)"
+    ]
+  ],
+  "installer": {
+    "script": [
+      "$vst3dir = $env:LOCALAPPDATA + \"\\programs\\common\\vst3\"",
+      "Write-Host Personal VST3 folder $vst3dir",
+      "New-Item -Force -ItemType Directory -Path $vst3dir | Out-Null",
+      "Copy-Item -Force -Path \"${dir}\\RC-808-PlugIn WIN\\RC-808-PLG.vst3\" -Destination $vst3dir"
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$vst3dir = $env:LOCALAPPDATA + \"\\programs\\common\\vst3\"",
+      "Remove-Item -Force -Path \"${vst3dir}\\RC-808-PLG.vst3\""
+    ]
+  }
+}
