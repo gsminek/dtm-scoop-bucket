@@ -10,16 +10,18 @@
   ],
   "url": "https://www.dropbox.com/s/udidmquo3eia6pl/UTALis433.zip?dl=1",
   "hash": "ee7cc04b97f4cf5ab70cff3ad33ee20ea896c2fff80bfda1328291204549912b",
-  "extract_to": "utalis",
+  "extract_to": "UTALis",
   "installer": {
     "script": [
-      "Copy-Item -Force -Recurse -Path \"${dir}\\utalis\" -Destination \"${persist_dir}\\..\\utau\\utau\\plugins\"",
-      "Remove-Item -Force -Recurse -Path \"${dir}\\utalis\""
+      "$plugin=($manifest | Select-Object -ExpandProperty extract_to)",
+      "Copy-Item -Force -Recurse -Path \"${dir}\\${plugin}\" -Destination \"${persist_dir}\\..\\utau\\utau\\plugins\"",
+      "Remove-Item -Force -Recurse -Path \"${dir}\\${plugin}\""
     ]
   },
   "uninstaller": {
     "script": [
-      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\plugins\\utalis\""
+      "$plugin=($manifest | Select-Object -ExpandProperty extract_to)",
+      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\plugins\\${plugin}\""
     ]
   }
 }
