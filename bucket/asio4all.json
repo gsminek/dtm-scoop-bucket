@@ -1,7 +1,7 @@
 {
+  "version": "2.15",
   "description": "ASIO4ALL",
   "homepage": "https://www.asio4all.org/",
-  "version": "2.15",
   "license": [
     {
       "identifier": "Proprietary"
@@ -16,8 +16,10 @@
   },
   "uninstaller": {
     "script": [
-      "$uninstaller=(Get-ItemProperty -Path \"Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ASIO4ALL\" | Select-Object -ExpandProperty UninstallString)",
+      "$regkey=\"ASIO4ALL\"",
+      "$uninstaller=(Get-ItemProperty -Path \"Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${regkey}\" | Select-Object -ExpandProperty UninstallString)",
       "Start-Process -Wait -Verb runAs -FilePath \"${uninstaller}\""
     ]
-  }
+  },
+  "checkver": "Version ([\\d\\.]+)"
 }
