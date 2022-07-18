@@ -19,5 +19,6 @@
       "UtaYomi.exe",
       "SHINTA 唄詠"
     ]
-  ]
+  ],
+  "checkver": "<td>Ver ([\\d\\.]+)</td>"
 }

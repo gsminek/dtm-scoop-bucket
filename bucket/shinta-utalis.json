@@ -23,5 +23,6 @@
       "$plugin=($manifest | Select-Object -ExpandProperty extract_to)",
       "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\plugins\\${plugin}\""
     ]
-  }
+  },
+  "checkver": "<td>Ver ([\\d\\.]+)</td>"
 }
