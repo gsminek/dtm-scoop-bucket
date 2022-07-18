@@ -27,5 +27,6 @@
       "$plugin=\"TTEnglishInputHelper-v0.3.0\"",
       "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\plugins\\${plugin}\""
     ]
-  }
+  },
+  "checkver": "TTEnglishInputHelper-v([\\d\\.]+).zip"
 }
