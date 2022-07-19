@@ -1,20 +1,24 @@
 {
-  "version": "100619",
-  "description": "TWINDRILL 重音テト　単独音",
-  "homepage": "https://kasaneteto.jp/ongen_down.html",
+  "version": "120930",
+  "description": "TWINDRILL 重音テト　追加力み音源",
+  "homepage": "https://kasaneteto.jp/ongen_down2.html",
   "license": [
     {
       "identifier": "Proprietary",
       "url": "https://kasaneteto.jp/guide_ongen.html"
     }
   ],
-  "url": "https://kasaneteto.jp/ongendl/index.cgi/tandoku/TETO-tandoku-100619.zip",
-  "hash": "bc0d9597b2d0f24fabcaf6ae835f93bed6ed3a9fd17fc6a11b1da3497aca38ec",
+  "url": "https://kasaneteto.jp/ongendl/index.cgi/extra/TETO-rikimitan-120930.zip",
+  "hash": "77f268e772014600ff25daf69e8f072024a7c7a5188ae87ec951208313692335",
   "extract_to": "voice",
   "suggest": {
     "UTAU": [
       "utau",
-      "dtm/utau"
+      "dtm/utau",
+      "kasane-teto-tandoku-utau",
+      "dtm/kasane-teto-tandoku-utau",
+      "kasane-teto-utau",
+      "dtm/kasane-teto-utau"
     ]
   },
   "installer": {
@@ -26,9 +30,9 @@
   },
   "uninstaller": {
     "script": [
-      "$voice=\"重音テト音声ライブラリー\"",
+      "$voice=\"重音テト音声ライブラリー\\重音テト力み音源\"",
       "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\""
     ]
   },
-  "checkver": "TETO-tandoku-([\\d]+).zip"
+  "checkver": "TETO-rikimitan-([\\d]+).zip"
 }
