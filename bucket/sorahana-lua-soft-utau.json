@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "description": "空花ルア UTAU -soft- 音源",
+  "homepage": "https://p-lua.jimdofree.com/%E9%85%8D%E5%B8%83/%E9%9F%B3%E6%BA%90/",
+  "license": [
+    {
+      "identifier": "Proprietary",
+      "url": "https://p-lua.jimdofree.com/%E5%88%A9%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3/"
+    }
+  ],
+  "url": "https://p-lua.jimdofree.com/%E5%88%A9%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3/",
+  "hash": "4aa7e61e6bced9a45cd19826bfc9fc04e8782e1b38c4d36de6b4c6d442954ca0",
+  "installer": {
+    "script": [
+      "$id = \"10GqsKY1Ri7w2l57jPV36W0thGCrn8Eiz\"",
+      "$filename = \"空花ルア -soft- v1,0.zip\"",
+      "$hash =\"9a98036d79b4c2e7f67ae25eceff5ce8d88043047bed5722cfc7ad1b5cf62cf7\"",
+      "$voice=\"空花ルア -soft-\"",
+      "$file = $cachedir + \"\\\" + $filename",
+      "if(Test-Path -Path $file -PathType Leaf){",
+      "   Write-Host \"Checking hash of $file ... \" -NoNewline",
+      "   $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
+      "   if([string]::IsNullOrEmpty($hash)){",
+      "     Write-Host \"skip\" -ForegroundColor Yellow",
+      "     Write-Warning \"No hash in manifest. SHA256 for '${filename}' is:\"",
+      "     Write-Host \"    $filehash\" -ForegroundColor Yellow",
+      "   }else{",
+      "     if($hash -eq $filehash){",
+      "         Write-Host \"ok\" -ForegroundColor Green",
+      "     }else{",
+      "         Write-Host \"error\" -ForegroundColor Red",
+      "         Write-Warning \"Cache file corrupted for '${filename}'\"",
+      "         Remove-Item -Path $file -Force",
+      "     }",
+      "   }",
+      "}",
+      "if(-not(Test-Path -Path $file -PathType Leaf)){",
+      "   Write-Host Download file $id from Google Drive",
+      "   $response = Invoke-WebRequest -Uri \"https://drive.google.com/uc?export=download&id=${id}\"",
+      "   if($response -match 'id=\"downloadForm\" action=\"([^\"]+)\" method=\"post\"'){",
+      "       $url = $matches[1].Replace(\"&amp;\",\"&\")",
+      "       $web = New-Object net.webclient",
+      "       $web.Downloadfile($url, \"${file}.tmp\")",
+      "       Rename-Item -Path \"${file}.tmp\" -NewName $filename",
+      "       if([string]::IsNullOrEmpty($hash)){",
+      "         $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
+      "         Write-Warning \"No hash in manifest. SHA256 for '${filename}' is:\"",
+      "         Write-Host \"    $filehash\" -ForegroundColor Yellow",
+      "       }",
+      "   }",
+      "}",
+      "$global:ProgressPreference = 'SilentlyContinue'",
+      "Expand-Archive -Path $file -DestinationPath $dir",
+      "Copy-Item -Force -Recurse -Path \"${dir}\\${voice}\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+      "Remove-Item -Force -Recurse -Path \"${dir}\\${voice}\""
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$voice=\"空花ルア -soft-\"",
+      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\""
+    ]
+  }
+}

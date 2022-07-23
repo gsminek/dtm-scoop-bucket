@@ -9,6 +9,11 @@
     - 0.3: [6892] Failed to execute script 'synth' due to unhandled exception!
   - amadeusy-akesato
   - amadeusy-ritsu
+- [空花ルア](https://p-lua.jimdofree.com/)
+  - sorahana-lua-power-utau
+  - sorahana-lua-rondo-utau
+  - sorahana-lua-soft-utau
+  - sorahana-lua-utau
 
 ## Jul 23, 2022
 
@@ -189,8 +194,10 @@
 
 ## Backlogs
 
+- [緋惺](https://akesato.info/)
+  - [MEGA](https://mega.io/) からダウンロードが必要
 - [Plugin Boutique](https://www.pluginboutique.com/)
-  - ダウンロードに認証が必要
+  - ダウンロードにユーザアカウントが必要
 - [棒読みちゃん](https://chi.usamimi.info/Program/Application/BouyomiChan/)
   - OneDrive からのダウンロードが必要
 - [TALQu](https://haruqa.booth.pm/items/2755336)
