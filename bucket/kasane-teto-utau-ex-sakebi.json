@@ -1,6 +1,6 @@
 {
-  "version": "210725",
-  "description": "TWINDRILL 重音テト　弱音源",
+  "version": "120930",
+  "description": "TWINDRILL 重音テト　追加叫び音源",
   "homepage": "https://kasaneteto.jp/ongen_down2.html",
   "license": [
     {
@@ -8,17 +8,17 @@
       "url": "https://kasaneteto.jp/guide_ongen.html"
     }
   ],
-  "url": "https://kasaneteto.jp/ongendl/index.cgi/extra/TETO-jakuongen210725.zip",
-  "hash": "4312fc536b49fb0c96390dc1c5bd6b85db14695ee101c0ef5f2f65a5deb19ec9",
+  "url": "https://kasaneteto.jp/ongendl/index.cgi/extra/TETO-sakebi-120930.zip",
+  "hash": "6ead5e03e38a7c544a03a3c7a749ed2dcd813b776c73640943fe3604636f154a",
   "extract_to": "voice",
   "suggest": {
     "UTAU": [
       "utau",
       "dtm/utau",
-      "kasane-teto-tandoku-utau",
-      "dtm/kasane-teto-tandoku-utau",
-      "kasane-teto-utau",
-      "dtm/kasane-teto-utau"
+      "kasane-teto-utau-vcv-cv",
+      "dtm/kasane-teto-utau-vcv-cv",
+      "kasane-teto-utau-vcv",
+      "dtm/kasane-teto-utau-vcv"
     ]
   },
   "installer": {
@@ -30,11 +30,9 @@
   },
   "uninstaller": {
     "script": [
-      "$voice=\"重音テト音声ライブラリー\\重音テト弱単独音\"",
-      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\"",
-      "$voice=\"重音テト音声ライブラリー\\重音テト弱連続音\"",
+      "$voice=\"重音テト音声ライブラリー\\重音テト叫び音源\"",
       "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\""
     ]
   },
-  "checkver": "TETO-jakuongen([\\d]+).zip"
+  "checkver": "TETO-sakebi-([\\d]+).zip"
 }

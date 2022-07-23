@@ -1,17 +1,33 @@
 # CHANGELOG
 
+## Jul 23, 2022
+
+### Voice synthecis - New manifests in Jul 23, 2022
+
+- [カノンの落ちる城](http://www.canon-voice.com/index.html)
+  - namine-ritsu-strong-utau-cv
+  - namine-ritsu-strong-utau-ex-devs
+  - namine-ritsu-strong-utau-ex-gobi
+  - namine-ritsu-strong-utau-ex-long
+  - namine-ritsu-strong-utau-vcv
+  - namine-ritsu-utau-cv
+  - namine-ritsu-utau-ex-devs
+  - namine-ritsu-utau-ex-gobi
+  - namine-ritsu-utau-ex-long
+  - namine-ritsu-utau-vcv
+
 ## Jul 19, 2022
 
 ### Voice synthecis - New manifests in Jul 19, 2022
 
 - [重音テト](https://kasaneteto.jp/)
-  - kasane-teto-edgeongen-ex-utau
-  - kasane-teto-jakuongen-ex-utau
-  - kasane-teto-namerakaongen-ex-utau
-  - kasane-teto-rikimitan-ex-utau
-  - kasane-teto-sakebi-ex-utau
-  - kasane-teto-sasayakitan-ex-utau
-  - kasane-teto-sasayakitougou-ex-utau
+  - kasane-teto-utau-ex-edgeongen
+  - kasane-teto-utau-ex-jakuongen
+  - kasane-teto-utau-ex-namerakaongen
+  - kasane-teto-utau-ex-rikimitan
+  - kasane-teto-utau-ex-sakebi
+  - kasane-teto-utau-ex-sasayakitan
+  - kasane-teto-utau-ex-sasayakitougou
 - [あさくら・ふにょし](https://hunyosi.com/)
   - tt-eih-config
   - tt-english-input-helper
@@ -21,9 +37,9 @@
 ### Voice synthecis - New manifests in Jul 18, 2022
 
 - [重音テト](https://kasaneteto.jp/)
-  - kasane-teto-english-ex-utau
-  - kasane-teto-tandoku-utau
-  - kasane-teto-utau
+  - kasane-teto-utau-cv
+  - kasane-teto-utau-ex-english
+  - kasane-teto-utau-vcv
 - [NEUTRINO NEURAL SINGING SYNTHESIZER](https://studio-neutrino.com/)
   - neutrino
   - neutrino-itako

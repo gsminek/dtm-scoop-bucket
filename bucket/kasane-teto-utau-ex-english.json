@@ -15,10 +15,10 @@
     "UTAU": [
       "utau",
       "dtm/utau",
-      "kasane-teto-tandoku-utau",
-      "dtm/kasane-teto-tandoku-utau",
-      "kasane-teto-utau",
-      "dtm/kasane-teto-utau"
+      "kasane-teto-utau-vcv-cv",
+      "dtm/kasane-teto-utau-vcv-cv",
+      "kasane-teto-utau-vcv",
+      "dtm/kasane-teto-utau-vcv"
     ],
     "tt-english-input-helper": [
       "tt-english-input-helper",
