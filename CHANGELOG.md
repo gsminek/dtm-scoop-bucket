@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## Jul 24, 2022
+
+### Voice synthecis - New manifests in Jul 24, 2022
+
+- [AmadeuSY](https://airesearcher113.wixsite.com/amadeusy")
+  - amadeusy
+    - 0.3: [6892] Failed to execute script 'synth' due to unhandled exception!
+  - amadeusy-akesato
+  - amadeusy-ritsu
+
 ## Jul 23, 2022
 
 ### Voice synthecis - New manifests in Jul 23, 2022
