@@ -2,7 +2,7 @@
 
 ## Jul 24, 2022
 
-### Voice synthecis - New manifests in Jul 24, 2022
+### Voice synthesis - New manifests in Jul 24, 2022
 
 - [AmadeuSY](https://airesearcher113.wixsite.com/amadeusy")
   - amadeusy
@@ -17,7 +17,7 @@
 
 ## Jul 23, 2022
 
-### Voice synthecis - New manifests in Jul 23, 2022
+### Voice synthesis - New manifests in Jul 23, 2022
 
 - [カノンの落ちる城](http://www.canon-voice.com/index.html)
   - namine-ritsu-strong-utau-cv
@@ -33,7 +33,7 @@
 
 ## Jul 19, 2022
 
-### Voice synthecis - New manifests in Jul 19, 2022
+### Voice synthesis - New manifests in Jul 19, 2022
 
 - [重音テト](https://kasaneteto.jp/)
   - kasane-teto-utau-ex-edgeongen
@@ -49,7 +49,7 @@
 
 ## Jul 18, 2022
 
-### Voice synthecis - New manifests in Jul 18, 2022
+### Voice synthesis - New manifests in Jul 18, 2022
 
 - [重音テト](https://kasaneteto.jp/)
   - kasane-teto-utau-cv
@@ -84,7 +84,7 @@
 
 ## Jul 9, 2022
 
-### Voice synthecis - New manifests in Jul 9, 2022
+### Voice synthesis - New manifests in Jul 9, 2022
 
 - [LMROID](https://lmroidsoftware.wixsite.com/nhoshio)
   - lmroid
@@ -104,7 +104,7 @@
 
 ## Jul 5, 2022
 
-### Voice synthecis - New manifests in Jul 5, 2022
+### Voice synthesis - New manifests in Jul 5, 2022
 
 - [AHS](https://www.ah-soft.com/)
   - synthesizer-v-ai-karin-lite
@@ -125,7 +125,7 @@
 
 ## Jul 4, 2022
 
-### Voice synthecis - New manifests in Jul 4, 2022
+### Voice synthesis - New manifests in Jul 4, 2022
 
 - [COEIROINK](https://coeiroink.com/)
   - coeiroink-cpu
@@ -143,7 +143,7 @@
 
 ## Jul 3, 2022
 
-### Voice synthecis - New manifests in Jul 3, 2022
+### Voice synthesis - New manifests in Jul 3, 2022
 
 - [SSS](https://zunko.jp/)
   - sss-chubu-tsurugi-utau
