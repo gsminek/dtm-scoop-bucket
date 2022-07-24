@@ -14,6 +14,8 @@
   - sorahana-lua-rondo-utau
   - sorahana-lua-soft-utau
   - sorahana-lua-utau
+- [nwp8861 (耳ロボP)](http://nwp8861.web.fc2.com/soft/)
+  - nwp8861-scat
 
 ## Jul 23, 2022
 
