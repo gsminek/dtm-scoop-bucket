@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Aug 4, 2022
+
+### DTM - New manifests in Aug 4, 2022
+
+- [IK Multimedia](https://www.ikmultimedia.com/)
+  - ik-product-manager
+
 ## Jul 24, 2022
 
 ### Voice synthesis - New manifests in Jul 24, 2022
