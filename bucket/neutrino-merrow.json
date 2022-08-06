@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "めろう NEUTRINO 歌声ライブラリ",
   "homepage": "https://studio-neutrino.com/",
   "license": [
@@ -14,32 +14,33 @@
     ]
   },
   "notes": [
-    "ダウンロード・インストールに長時間かかります。ダウンロードに失敗した場合は最初からのダウンロードになります。",
-    "ブラウザでダウンロードしたファイルを scoop\\cache ディレクトリに配置するほうが確実です。"
+    "ダウンロード・インストールに長時間かかります。ダウンロードに失敗した場合は最初からのダウンロードになります。"
   ],
-  "url": "https://studio-neutrino.com/535/",
-  "hash": "01afaee98cdc2bb5b2a98ab6a1720574ab39938b1868887d35b5eba8e8e131da",
+  "url": "https://studio-neutrino.com/wp-content/uploads/2021/02/logo_light-1536x384.png",
+  "hash": "61681822df456676d83d7d991cffc7196167cbc56cfabcac5e9bdcc20200a8e6",
   "installer": {
     "script": [
-      "$id = \"1gwuBaO308xY1YCB5ZuERiknsMtPH76mO\"",
-      "$filename = \"めろう（NEUTRINO-Library）-v1.1.0.zip\"",
-      "$hash =\"f3b78f0c281905517f8f66de2cc8b6f3372ee76f3f550f2b2e9907672dfd613c\"",
+      "$id = \"1r_ySlrpTVOrfV2k5ep8bT4QpTOiYfxk8\"",
+      "$filename = \"めろう（NEUTRINO-Library）-v1.2.0.zip\"",
+      "$hash =\"e85814f0e8d0d858af19c654a054ae7ddacb23820cf845153636a84dd249db6b\"",
       "$model_dir =\"めろう（NEUTRINO-Library）\\MERROW\"",
       "$file = $cachedir + \"\\\" + $filename",
       "if(Test-Path -Path $file -PathType Leaf){",
       "   Write-Host \"Checking hash of $file ... \" -NoNewline",
       "   $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
       "   if([string]::IsNullOrEmpty($hash)){",
-      "     Write-Host \"skip\" -ForegroundColor Yellow",
+      "     Write-Host \"skip\" -ForegroundColor Yellow",     
       "     Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
       "     Write-Host \"    $filehash\" -ForegroundColor Yellow",
       "   }else{",
       "     if($hash -eq $filehash){",
-      "       Write-Host \"ok\" -ForegroundColor Green",
+      "         Write-Host \"ok\" -ForegroundColor Green",     
       "     }else{",
-      "       Write-Host \"error\" -ForegroundColor Red",
-      "       Write-Warning \"Warning: Cache file corrupted for '${filename}'\"",
-      "       Remove-Item -Path $file -Force",
+      "         Write-Host \"error\" -ForegroundColor Red",     
+      "         Write-Warning \"Warning: Cache file corrupted for '${filename}'\"",
+      "         Write-Warning \"expected: ${hash}\"",
+      "         Write-Warning \"actual:   ${filehash}\"",
+      "         Remove-Item -Path $file -Force",
       "     }",
       "   }",
       "}",
@@ -48,13 +49,15 @@
       "   $response = Invoke-WebRequest -Uri \"https://drive.google.com/uc?export=download&id=${id}\"",
       "   if($response -match 'id=\"downloadForm\" action=\"([^\"]+)\" method=\"post\"'){",
       "       $url = $matches[1].Replace(\"&amp;\",\"&\")",
-      "       Invoke-WebRequest -Uri $url -OutFile \"${file}.tmp\"",
+      "       (New-Object System.Net.WebClient).DownloadFile($url, \"${file}.tmp\")",
       "       Rename-Item -Path \"${file}.tmp\" -NewName $filename",
       "       if([string]::IsNullOrEmpty($hash)){",
       "         $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
       "         Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
       "         Write-Host \"    $filehash\" -ForegroundColor Yellow",
       "       }",
+      "   } else {",
+      "     Write-Warning  $response",
       "   }",
       "}",
       "Expand-Archive -Path $file -DestinationPath $dir",
@@ -67,5 +70,9 @@
       "$model =\"MERROW\"",
       "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\neutrino\\NEUTRINO\\model\\${model}\""
     ]
+  },
+  "checkver": {
+    "url": "https://studio-neutrino.com/535/",
+    "regex": "Electron v([\\d.]+)~"
   }
 }

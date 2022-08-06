@@ -2,11 +2,29 @@
 
 ## Aug 6, 2022
 
+### Voice synthesis - New manifests in Aug 6, 2022
+
+- [NEUTRINO NEURAL SINGING SYNTHESIZER](https://studio-neutrino.com/)
+  - neutrino-zundamon
+
 ### Voice synthesis - Update manifests in Aug 6, 2022
+
+- [NEUTRINO NEURAL SINGING SYNTHESIZER](https://studio-neutrino.com/)
+  - neutrino
+  - neutrino-itako
+  - neutrino-jsut
+  - neutrino-kiritan
+  - neutrino-merrow
+  - neutrino-nakumo
+  - neutrino-seven
+  - neutrino-yoko
+  - neutrino-zunko
+    - Update version 1.2.0 package.
 
 - [Hiroshiba Kazuyuki](https://voicevox.hiroshiba.jp/)
   - voicevox
   - voicevox-cpu
+    - Update version 0.12.5 package.
 
 ## Aug 4, 2022
 

@@ -1,6 +1,6 @@
 {
   "version": "1.2.0",
-  "description": "東北ずん子 NEUTRINO 歌声ライブラリ",
+  "description": "ずんだもん NEUTRINO 歌声ライブラリ",
   "homepage": "https://studio-neutrino.com/",
   "license": [
     {
@@ -20,10 +20,10 @@
   "hash": "61681822df456676d83d7d991cffc7196167cbc56cfabcac5e9bdcc20200a8e6",
   "installer": {
     "script": [
-      "$id = \"1yQRRVJl2w6mBGbGnhHR7rQB0ZkZeVGcm\"",
-      "$filename = \"東北ずん子（NEUTRINO-Library）-v1.2.0.zip\"",
-      "$hash =\"38ea238deb5f557d16f5e97175ab27150f1de7bc77422f0742e5014ac392abcf\"",
-      "$model_dir =\"東北ずん子（NEUTRINO-Library）\\ZUNKO\"",
+      "$id = \"1miPq8B-_qunCzJXFG-G7IigLBVji-_Mz\"",
+      "$filename = \"ずんだもん（NEUTRINO-Library）-v1.2.0.zip\"",
+      "$hash =\"6c12b2508dd1acd62f57e3ed0c6ac36930c37fec3ab1567825ddb9c67e07dde6\"",
+      "$model_dir =\"ずんだもん（NEUTRINO-Library）\\ZUNDAMON\"",
       "$file = $cachedir + \"\\\" + $filename",
       "if(Test-Path -Path $file -PathType Leaf){",
       "   Write-Host \"Checking hash of $file ... \" -NoNewline",
