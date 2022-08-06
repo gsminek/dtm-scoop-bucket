@@ -8,30 +8,31 @@
     }
   ],
   "notes": [
-    "ダウンロード・インストールに長時間かかります。ダウンロードに失敗した場合は最初からのダウンロードになります。",
-    "ブラウザでダウンロードしたファイルを scoop\\cache ディレクトリに配置するほうが確実です。"
+    "ダウンロード・インストールに長時間かかります。ダウンロードに失敗した場合は最初からのダウンロードになります。"
   ],
-  "url": "https://studio-neutrino.com/",
-  "hash": "05833999e91b3d5dfa9b8bbb30e15b8dfa6d11699459c23c1fe91f57702fdb1e",
+  "url": "https://studio-neutrino.com/wp-content/uploads/2021/02/logo_light-1536x384.png",
+  "hash": "61681822df456676d83d7d991cffc7196167cbc56cfabcac5e9bdcc20200a8e6",
   "installer": {
     "script": [
       "$id = \"16hSl4s3IwEAlJjnKbIFyoFGR6B8i9eG8\"",
       "$filename = \"NEUTRINO-Windows-v1.1.0.zip\"",
-      "$hash =\"f00a41012ed782648875b1b37d23fad75dad69181dbe18f012d6f91bdaa082f6\"",
+      "$hash =\"0c4eddda260c00cd400d4438646a4cfd90ffba50d15c00c2156552caa93b1d53\"",
       "$file = $cachedir + \"\\\" + $filename",
       "if(Test-Path -Path $file -PathType Leaf){",
       "   Write-Host \"Checking hash of $file ... \" -NoNewline",
       "   $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
       "   if([string]::IsNullOrEmpty($hash)){",
-      "     Write-Host \"skip\" -ForegroundColor Yellow",     
+      "     Write-Host \"skip\" -ForegroundColor Yellow",
       "     Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
       "     Write-Host \"    $filehash\" -ForegroundColor Yellow",
       "   }else{",
       "     if($hash -eq $filehash){",
-      "         Write-Host \"ok\" -ForegroundColor Green",     
+      "         Write-Host \"ok\" -ForegroundColor Green",
       "     }else{",
-      "         Write-Host \"error\" -ForegroundColor Red",     
+      "         Write-Host \"error\" -ForegroundColor Red",
       "         Write-Warning \"Warning: Cache file corrupted for '${filename}'\"",
+      "         Write-Warning \"expected: ${hash}\"",
+      "         Write-Warning \"actual:   ${filehash}\"",
       "         Remove-Item -Path $file -Force",
       "     }",
       "   }",
@@ -41,7 +42,15 @@
       "   $response = Invoke-WebRequest -Uri \"https://drive.google.com/uc?export=download&id=${id}\"",
       "   if($response -match 'id=\"downloadForm\" action=\"([^\"]+)\" method=\"post\"'){",
       "       $url = $matches[1].Replace(\"&amp;\",\"&\")",
-      "       Invoke-WebRequest -Uri $url -OutFile $file",
+      "       (New-Object System.Net.WebClient).DownloadFile($url, \"${file}.tmp\")",
+      "       Rename-Item -Path \"${file}.tmp\" -NewName $filename",
+      "       if([string]::IsNullOrEmpty($hash)){",
+      "         $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
+      "         Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
+      "         Write-Host \"    $filehash\" -ForegroundColor Yellow",
+      "       }",
+      "   } else {",
+      "     Write-Warning  $response",
       "   }",
       "}",
       "Expand-Archive -Path $file -DestinationPath $dir"
@@ -52,5 +61,9 @@
     "NEUTRINO\\output",
     "NEUTRINO\\score",
     "NEUTRINO\\settings"
-  ]
+  ],
+  "checkver": {
+    "url": "https://studio-neutrino.com/535/",
+    "regex": "NEUTRINO-Windows-v([\\d.]+)\\.zip"
+  }
 }
