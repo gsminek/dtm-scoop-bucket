@@ -1,5 +1,5 @@
 {
-  "version": "0.12.4",
+  "version": "0.12.5",
   "description": "VOICEVOX CPU",
   "homepage": "https://voicevox.hiroshiba.jp/",
   "notes": "インストーラーの利用が公式により推奨されています。",
@@ -9,15 +9,15 @@
     }
   ],
   "url": [
-    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.4/VOICEVOX-CPU.Web.Setup.0.12.4.exe",
-    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.4/voicevox-cpu-0.12.4-x64.nsis.7z.0"
+    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.5/VOICEVOX-CPU.Web.Setup.0.12.5.exe",
+    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.5/voicevox-cpu-0.12.5-x64.nsis.7z.0"
   ],
   "hash": [
-    "70dc6c7dd2ac13c5a25e45a901d2f395f87a8fb4fc518fe4ce420d51c40f0b6e",
-    "3acdb53d338ceab5c15b6cc5ec6b431e0412fc3e081d07d8a349065ba77d7f29"
+    "028177984f72b622b24d6ab76ae51d624d64b49f7755e398209282643b37201f",
+    "b62bf780833601b470521b2a89d714c5b80a1bddeb9b568cdec8b5ea54225ad3"
   ],
   "installer": {
-    "file": "VOICEVOX-CPU.Web.Setup.0.12.4.exe"
+    "file": "VOICEVOX-CPU.Web.Setup.0.12.5.exe"
   },
   "uninstaller": {
     "script": [

@@ -1,5 +1,5 @@
 {
-  "version": "0.12.4",
+  "version": "0.12.5",
   "description": "VOICEVOX GPU/CPU",
   "homepage": "https://voicevox.hiroshiba.jp/",
   "notes": "インストーラーの利用が公式により推奨されています。",
@@ -9,17 +9,17 @@
     }
   ],
   "url": [
-    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.4/VOICEVOX.Web.Setup.0.12.4.exe",
-    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.4/voicevox-0.12.4-x64.nsis.7z.0",
-    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.4/voicevox-0.12.4-x64.nsis.7z.1"
+    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.5/VOICEVOX.Web.Setup.0.12.5.exe",
+    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.5/voicevox-0.12.5-x64.nsis.7z.0",
+    "https://github.com/VOICEVOX/voicevox/releases/download/0.12.5/voicevox-0.12.5-x64.nsis.7z.1"
   ],
   "hash": [
-    "566f7c9e1b4910a70846a9c708e4d2c41db03bad9a476137c4f401cc25728338",
-    "27abf04d76508d2146610984ed1610685e811fed7da73dbaacb55b394ee2b81e",
-    "86e6fd4b20c94beed24ad8bb60a3530cdebc63cd6bc65a6040ceb06d19fa26be"
+    "0f34022dce56d2c73ec5691a0c05acd5f6bae94907a6ed80684570061133f6a0",
+    "d31119bb816052c31f3732c023b7a647ae953b81a437f46d3609ec98edde4e7b",
+    "d7030ca771de303e05900bb12199a339c24f136a05e289ff7a0e7e361f69f581"
   ],
   "installer": {
-    "file": "VOICEVOX.Web.Setup.0.12.4.exe"
+    "file": "VOICEVOX.Web.Setup.0.12.5.exe"
   },
   "uninstaller": {
     "script": [

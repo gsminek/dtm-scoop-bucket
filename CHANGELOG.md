@@ -1,11 +1,20 @@
 # CHANGELOG
 
+## Aug 6, 2022
+
+### Voice synthesis - Update manifests in Aug 6, 2022
+
+- [Hiroshiba Kazuyuki](https://voicevox.hiroshiba.jp/)
+  - voicevox
+  - voicevox-cpu
+
 ## Aug 4, 2022
 
 ### DTM - New manifests in Aug 4, 2022
 
 - [IK Multimedia](https://www.ikmultimedia.com/)
   - ik-product-manager
+  - ik-authorization-manager
 
 ## Jul 24, 2022
 
