@@ -6,6 +6,8 @@
 
 - [NEUTRINO NEURAL SINGING SYNTHESIZER](https://studio-neutrino.com/)
   - neutrino-zundamon
+- [Utsu](https://github.com/titinko/utsu)
+  - utsu
 
 ### Voice synthesis - Update manifests in Aug 6, 2022
 
