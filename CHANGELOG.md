@@ -6,6 +6,8 @@
 
 - [NEUTRINO NEURAL SINGING SYNTHESIZER](https://studio-neutrino.com/)
   - neutrino-zundamon
+- [OpenUtau](http://www.openutau.com/)
+  - openutau
 - [Utsu](https://github.com/titinko/utsu)
   - utsu
 
