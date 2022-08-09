@@ -15,7 +15,7 @@
   ],
   "hash": [
     "0f34022dce56d2c73ec5691a0c05acd5f6bae94907a6ed80684570061133f6a0",
-    "d31119bb816052c31f3732c023b7a647ae953b81a437f46d3609ec98edde4e7b",
+    "c2b40423d9e9ccca5f5b71d257b22d1e16b5edb0b61672dbdf437812befcce6a",
     "d7030ca771de303e05900bb12199a339c24f136a05e289ff7a0e7e361f69f581"
   ],
   "installer": {
@@ -23,10 +23,10 @@
   },
   "uninstaller": {
     "script": [
-      "$installkey = \"92713bbc-5c5b-5df6-b6d1-5b09e302bf58\"",
-      "$uninstaller=(Get-ItemProperty -Path \"Registry::HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${installkey}\" | Select-Object -ExpandProperty UninstallString)",
+      "$regkey = \"92713bbc-5c5b-5df6-b6d1-5b09e302bf58\"",
+      "$uninstaller=(Get-ItemProperty -Path \"Registry::HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${regkey}\" | Select-Object -ExpandProperty UninstallString)",
       "if([string]::IsNullOrEmpty($uninstaller)){",
-      " $uninstaller=(Get-ItemProperty -Path \"Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${installkey}\" | Select-Object -ExpandProperty UninstallString)",
+      " $uninstaller=(Get-ItemProperty -Path \"Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${regkey}\" | Select-Object -ExpandProperty UninstallString)",
       "}",
       "cmd /c \"${uninstaller}\""
     ]
