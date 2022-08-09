@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## Aug 10, 2022
+
+### Voice synthesis - New manifests in Aug 10, 2022
+
+- [COEIROINK](https://coeiroink.com/)
+  - coeiroink
+  - coeiroink-almachan
+  - coeiroink-diachan
+  - coeiroink-mana
+  - coeiroink-ofutonp
+  - coeiroink-tyc
+
 ## Aug 6, 2022
 
 ### Voice synthesis - New manifests in Aug 6, 2022
