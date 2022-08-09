@@ -12,6 +12,11 @@
   - coeiroink-ofutonp
   - coeiroink-tyc
 
+### Voice synthesis - Update manifests in Aug 10, 2022
+
+- [COEIROINK](https://coeiroink.com/)
+  - coeiroink-cpu
+
 ## Aug 6, 2022
 
 ### Voice synthesis - New manifests in Aug 6, 2022
