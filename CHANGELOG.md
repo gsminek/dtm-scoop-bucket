@@ -13,6 +13,8 @@
 
 - [COEIROINK](https://coeiroink.com/)
   - coeiroink-mana
+- [OpenUtau](http://www.openutau.com/)
+  - openutau
 
 ## Aug 10, 2022
 
