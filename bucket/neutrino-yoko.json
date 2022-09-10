@@ -71,6 +71,6 @@
   },
   "checkver": {
     "url": "https://studio-neutrino.com/535/",
-    "regex": "Electron v([\\d.]+)~"
+    "regex": "%E8%AC%A1%E5%AD%90%EF%BC%88NEUTRINO-Library%EF%BC%89-v([\\d.]+[^.]*).zip"
   }
 }

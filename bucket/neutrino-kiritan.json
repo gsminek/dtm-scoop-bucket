@@ -29,14 +29,14 @@
       "   Write-Host \"Checking hash of $file ... \" -NoNewline",
       "   $filehash = (Get-FileHash -Path $file -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()",
       "   if([string]::IsNullOrEmpty($hash)){",
-      "     Write-Host \"skip\" -ForegroundColor Yellow",     
+      "     Write-Host \"skip\" -ForegroundColor Yellow",
       "     Write-Warning \"Warning: No hash in manifest. SHA256 for '${filename}' is:\"",
       "     Write-Host \"    $filehash\" -ForegroundColor Yellow",
       "   }else{",
       "     if($hash -eq $filehash){",
-      "         Write-Host \"ok\" -ForegroundColor Green",     
+      "         Write-Host \"ok\" -ForegroundColor Green",
       "     }else{",
-      "         Write-Host \"error\" -ForegroundColor Red",     
+      "         Write-Host \"error\" -ForegroundColor Red",
       "         Write-Warning \"Warning: Cache file corrupted for '${filename}'\"",
       "         Write-Warning \"expected: ${hash}\"",
       "         Write-Warning \"actual:   ${filehash}\"",
@@ -73,6 +73,6 @@
   },
   "checkver": {
     "url": "https://studio-neutrino.com/535/",
-    "regex": "Electron v([\\d.]+)~"
+    "regex": "%E6%9D%B1%E5%8C%97%E3%81%8D%E3%82%8A%E3%81%9F%E3%82%93%EF%BC%88NEUTRINO-Library%EF%BC%89-v([\\d.]+[^.]*).zip"
   }
 }
