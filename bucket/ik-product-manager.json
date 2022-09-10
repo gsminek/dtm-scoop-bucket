@@ -22,5 +22,5 @@
       "Start-Process -Wait -Verb runAs -FilePath \"${uninstaller}\""
     ]
   },
-  "checkver": "ik_product_manager_([\\d\\.]+)"
+  "checkver": "ik_product_manager_([\\d\\.]+[\\d])"
 }
