@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "description": "AmadeuSY",
+  "description": "AmadeuSY synth.bat",
   "homepage": "https://airesearcher113.wixsite.com/amadeusy",
   "license": [
     {
@@ -10,14 +10,11 @@
   ],
   "url": "https://airesearcher113.wixsite.com/amadeusy",
   "hash": "39890d7f3e78b8acbf5803f325f30d8d5785a7ab9e5be62bee2219073c3c3067",
-  "depends": [
-    "amadeusy-bat"
-  ],
   "installer": {
     "script": [
-      "$id = \"1Vha2eXiKh0A7SyoNuwVwARsIYlLoTpPn\"",
-      "$filename = \"synth.exe\"",
-      "$hash =\"d175613c632b87a9bd6da95842fd4a374c59b70d7e0f3183ef3b7e206fb379cf\"",
+      "$id = \"17BxdRE66N22OIvwu7E3Bx9TvXDwT4z2Y\"",
+      "$filename = \"synth.bat\"",
+      "$hash =\"e7bbad115949512c07d8c798876423ebb910d252e4931ce21b9dc60155575389\"",
       "$file = $cachedir + \"\\\" + $filename",
       "if(Test-Path -Path $file -PathType Leaf){",
       "   Write-Host \"Checking hash of $file ... \" -NoNewline",
@@ -53,6 +50,6 @@
       "}",
       "Copy-Item -Force -Recurse -Path $file -Destination $dir"
     ],
-    "bin": "synth.exe"
+    "bin": "synth.bat"
   }
 }

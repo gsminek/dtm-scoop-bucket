@@ -11,6 +11,9 @@
 
 ### Voice synthesis - Update manifests in Aug 10, 2022
 
+- [amadeusy](https://airesearcher113.wixsite.com/amadeusy)
+  - amadeusy
+  - amadeusy-bat
 - [COEIROINK](https://coeiroink.com/)
   - coeiroink-mana
 - [OpenUtau](http://www.openutau.com/)
