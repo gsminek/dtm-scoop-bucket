@@ -21,6 +21,8 @@
   - coeiroink-mana
 - [OpenUtau](http://www.openutau.com/)
   - openutau
+- [Roland Zenbeats](https://www.roland.com/jp/products/rc_zenbeats/)
+  - zenbeats
 - [SofTalk](https://w.atwiki.jp/softalk/pages/15.html)
   - softalk
 - [Steinberg Download Assistant](https://japan.steinberg.net/jp/support/content_and_accessories/steinberg_download_assistant.html)

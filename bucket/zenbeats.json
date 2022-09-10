@@ -1,14 +1,14 @@
 {
   "description": "Roland Zenbeats",
   "homepage": "https://www.roland.com/jp/products/rc_zenbeats/",
-  "version": "3.0.5.9059",
+  "version": "3.0.10.9119",
   "license": [
     {
       "identifier": "Proprietary"
     }
   ],
   "url": "https://static.roland.com/assets/media/exe/Zenbeats_Installer.exe",
-  "hash": "7bfc12a091cbcffc2bdbf579a6d9638b904ad3d7ab803e66a1cacb87afff841c",
+  "hash": "856eeb9a8edb0ab7ac7ed5f05b67776f3d6c23d2b0e0a3bd4c9c577b08539028",
   "installer": {
     "script": [
       "Start-Process -Wait -Verb runAs -FilePath \"${dir}\\Zenbeats_Installer.exe\""
