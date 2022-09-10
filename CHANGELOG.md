@@ -4,6 +4,8 @@
 
 ### Voice synthesis - New manifests in Sep 10, 2022
 
+- [COEIROINK](https://coeiroink.com/)
+  - coeiroink-manaplus
 - [sharevox](https://www.sharevox.app/
   - sharevox-cpu
 
