@@ -12,7 +12,7 @@
 - [sharevox](https://www.sharevox.app/
   - sharevox-cpu
 
-### Voice synthesis - Update manifests in Aug 10, 2022
+### Voice synthesis - Update manifests in Sep 10, 2022
 
 - [AmadeuSY](https://airesearcher113.wixsite.com/amadeusy)
   - amadeusy
@@ -26,6 +26,15 @@
 - [VOICEVOX](https://voicevox.hiroshiba.jp/)
   - voicevox
   - voicevox-cpu
+
+### Voice synthesis - Remove manifests in Sep 10, 2022
+
+- [空花ルア](https://p-lua.jimdofree.com/)
+    - 配布サイトが OneDrive に変更になったため
+      - sorahana-lua-power-utau
+      - sorahana-lua-rondo-utau
+      - sorahana-lua-soft-utau
+      - sorahana-lua-utau
 
 ## Aug 10, 2022
 
@@ -282,6 +291,7 @@
   - [MEGA](https://mega.io/) からダウンロードが必要
 - [Plugin Boutique](https://www.pluginboutique.com/)
   - ダウンロードにユーザアカウントが必要
+- [空花ルア](https://p-lua.jimdofree.com/)
 - [棒読みちゃん](https://chi.usamimi.info/Program/Application/BouyomiChan/)
   - OneDrive からのダウンロードが必要
 - [TALQu](https://haruqa.booth.pm/items/2755336)
