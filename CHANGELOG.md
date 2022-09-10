@@ -15,6 +15,9 @@
   - coeiroink-mana
 - [OpenUtau](http://www.openutau.com/)
   - openutau
+- [VOICEVOX](https://voicevox.hiroshiba.jp/)
+  - voicevox
+  - voicevox-cpu
 
 ## Aug 10, 2022
 
