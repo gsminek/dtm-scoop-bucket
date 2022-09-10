@@ -21,6 +21,8 @@
   - coeiroink-mana
 - [OpenUtau](http://www.openutau.com/)
   - openutau
+- [SofTalk](https://w.atwiki.jp/softalk/pages/15.html)
+  - softalk
 - [VOICEVOX](https://voicevox.hiroshiba.jp/)
   - voicevox
   - voicevox-cpu
