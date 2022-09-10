@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Sep 10, 2022
+
+### Voice synthesis - New manifests in Sep 10, 2022
+
+- [sharevox](https://www.sharevox.app/
+  - sharevox-cpu
+
 ## Aug 10, 2022
 
 ### Voice synthesis - New manifests in Aug 10, 2022
