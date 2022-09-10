@@ -4,6 +4,9 @@
 
 ### Voice synthesis - New manifests in Sep 10, 2022
 
+- [AmadeuSY](https://airesearcher113.wixsite.com/amadeusy)
+  - amadeusy-hakupo
+  - amadeusy-shigure
 - [COEIROINK](https://coeiroink.com/)
   - coeiroink-manaplus
 - [sharevox](https://www.sharevox.app/
@@ -11,7 +14,7 @@
 
 ### Voice synthesis - Update manifests in Aug 10, 2022
 
-- [amadeusy](https://airesearcher113.wixsite.com/amadeusy)
+- [AmadeuSY](https://airesearcher113.wixsite.com/amadeusy)
   - amadeusy
   - amadeusy-bat
 - [COEIROINK](https://coeiroink.com/)
