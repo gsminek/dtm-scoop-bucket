@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "COEIROINK MANA",
   "homepage": "https://coeiroink.com/",
   "license": [
@@ -9,8 +9,8 @@
     }
   ],
   "notes": "ダウンロード・インストールに長時間かかります。",
-  "url": "https://www.dropbox.com/s/cd1ljyz615l2r78/292ea286-3d5f-f1cc-157c-66462a6a9d08.zip?dl=1",
-  "hash": "d33199e49c58587bf635dfe16a62d77d6a96633898f7b93ab62a820ae33c4784",
+  "url": "https://www.dropbox.com/s/aqhluxxx3jds4pf/292ea286-3d5f-f1cc-157c-66462a6a9d08.zip?dl=1",
+  "hash": "c4a397ebe10f611c96b251ecde4436f146bdbc353d2e1e76cb6233d8bf6705d2",
   "suggest": {
     "COEIROINK": [
       "coeiroink",

@@ -7,6 +7,11 @@
 - [sharevox](https://www.sharevox.app/
   - sharevox-cpu
 
+### Voice synthesis - Update manifests in Aug 10, 2022
+
+- [COEIROINK](https://coeiroink.com/)
+  - coeiroink-mana
+
 ## Aug 10, 2022
 
 ### Voice synthesis - New manifests in Aug 10, 2022
