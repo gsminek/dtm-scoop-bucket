@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "NEUTRINO",
   "homepage": "https://studio-neutrino.com/",
   "license": [
@@ -11,9 +11,9 @@
   "hash": "61681822df456676d83d7d991cffc7196167cbc56cfabcac5e9bdcc20200a8e6",
   "installer": {
     "script": [
-      "$id = \"1D-RvSZTGS3QCfkrBcT_gR2VFkPg3LDcA\"",
-      "$filename = \"NEUTRINO-Windows-v1.2.0.zip\"",
-      "$hash =\"b0be366ff821c6f4fed82eb1f297549aeee2f263c0a0ce025eef898c9951767d\"",
+      "$id = \"1NL_LhYwRL0Z7M3g3PKhLcsqGAKksjBId\"",
+      "$filename = \"NEUTRINO-Windows-v1.2.1.zip\"",
+      "$hash =\"405fe3d2db8ab9af403c20a8f80e2f3457c448c46ea2d2abb2c2bee6d87867c4\"",
       "$file = $cachedir + \"\\\" + $filename",
       "if(Test-Path -Path $file -PathType Leaf){",
       "   Write-Host \"Checking hash of $file ... \" -NoNewline",

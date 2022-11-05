@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Nov 4, 2022
+
+### Voice synthesis - Update manifests in Aug 6, 2022
+
+- [NEUTRINO NEURAL SINGING SYNTHESIZER](https://studio-neutrino.com/)
+  - neutrino
+
 ## Sep 10, 2022
 
 ### Voice synthesis - New manifests in Sep 10, 2022
@@ -32,11 +39,11 @@
 ### Voice synthesis - Remove manifests in Sep 10, 2022
 
 - [空花ルア](https://p-lua.jimdofree.com/)
-    - 配布サイトが OneDrive に変更になったため
-      - sorahana-lua-power-utau
-      - sorahana-lua-rondo-utau
-      - sorahana-lua-soft-utau
-      - sorahana-lua-utau
+  - 配布サイトが OneDrive に変更になったため
+    - sorahana-lua-power-utau
+    - sorahana-lua-rondo-utau
+    - sorahana-lua-soft-utau
+    - sorahana-lua-utau
 
 ### DTM - Update manifests in Sep 10, 2022
 
