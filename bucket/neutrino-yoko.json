@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "謡子 NEUTRINO 歌声ライブラリ",
   "homepage": "https://studio-neutrino.com/",
   "license": [
@@ -20,9 +20,9 @@
   "hash": "61681822df456676d83d7d991cffc7196167cbc56cfabcac5e9bdcc20200a8e6",
   "installer": {
     "script": [
-      "$id = \"1VlSbjQP_CGRDNihM2i-W3GuM8s_YEbvA\"",
-      "$filename = \"謡子（NEUTRINO-Library）-v1.2.0.zip\"",
-      "$hash =\"e14c2250a887f99fb1ce98417d39e8deb225d6833126364f3ba834e1dd0b825c\"",
+      "$id = \"1TPeeZYqW9N43rx5MzcX_6aBHnDNu1YMx/\"",
+      "$filename = \"謡子（NEUTRINO-Library）-v1.3.0.zip\"",
+      "$hash =\"2f85ddd4d1de7c99a6b3ad3b35123e611b4e5ce06694e386106a6f407d36251f\"",
       "$model_dir =\"謡子（NEUTRINO-Library）\\YOKO\"",
       "$file = $cachedir + \"\\\" + $filename",
       "if(Test-Path -Path $file -PathType Leaf){",

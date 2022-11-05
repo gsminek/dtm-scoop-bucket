@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "東北きりたん NEUTRINO 歌声ライブラリ",
   "homepage": "https://studio-neutrino.com/",
   "license": [
@@ -20,9 +20,9 @@
   "hash": "61681822df456676d83d7d991cffc7196167cbc56cfabcac5e9bdcc20200a8e6",
   "installer": {
     "script": [
-      "$id = \"1--MBmM_EfDM9e0IUq5YvNhPWTNlwecKD\"",
-      "$filename = \"東北きりたん（NEUTRINO-Library）-v1.2.0.zip\"",
-      "$hash =\"fbeb4c6c2a69a11f9320805bfc5e8420edfb82375391ab446f8ee5140f2f4a90\"",
+      "$id = \"1gw9OKDVLYIRdVki8wUj5sKegtYdcl7v0\"",
+      "$filename = \"東北きりたん（NEUTRINO-Library）-v1.3.0.zip\"",
+      "$hash =\"eb753570fa0e18dd668ee5144abef063cb7ef01b93d125f770fec1db4d2f18d5\"",
       "$model_dir =\"東北きりたん（NEUTRINO-Library）\\KIRITAN\"",
       "$file = $cachedir + \"\\\" + $filename",
       "if(Test-Path -Path $file -PathType Leaf){",

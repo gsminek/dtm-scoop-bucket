@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "東北イタコ NEUTRINO 歌声ライブラリ",
   "homepage": "https://studio-neutrino.com/",
   "license": [
@@ -20,9 +20,9 @@
   "hash": "61681822df456676d83d7d991cffc7196167cbc56cfabcac5e9bdcc20200a8e6",
   "installer": {
     "script": [
-      "$id = \"1LSUTK9cSPvhBEOhlWLcMzPP8o8d8qxwn\"",
-      "$filename = \"東北イタコ（NEUTRINO-Library）-v1.2.0.zip\"",
-      "$hash =\"e0c09cdf96d721d848c0e27e6ac26b1dc93479ce3d5e89644603755fbbfa5374\"",
+      "$id = \"1TDWS-ilFDWjWSyZ2jFqs9zqaqbU7fF1x\"",
+      "$filename = \"東北イタコ（NEUTRINO-Library）-v1.3.0.zip\"",
+      "$hash =\"086d9a74bd11c53e844bd90b12fdc6972c5716d17fdbc7741f73e745fffa4e62\"",
       "$model_dir =\"東北イタコ（NEUTRINO-Library）\\ITAKO\"",
       "$file = $cachedir + \"\\\" + $filename",
       "if(Test-Path -Path $file -PathType Leaf){",

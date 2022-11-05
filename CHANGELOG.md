@@ -2,10 +2,24 @@
 
 ## Nov 4, 2022
 
-### Voice synthesis - Update manifests in Aug 6, 2022
+### Voice synthesis - New manifests in Nov 4, 2022
+
+- [NEUTRINO NEURAL SINGING SYNTHESIZER](https://studio-neutrino.com/)
+  - neutrino-metan
+
+### Voice synthesis - Update manifests in Nov 4, 2022
 
 - [NEUTRINO NEURAL SINGING SYNTHESIZER](https://studio-neutrino.com/)
   - neutrino
+  - neutrino-itako
+  - neutrino-jsut
+  - neutrino-kiritan
+  - neutrino-merrow
+  - neutrino-nakumo
+  - neutrino-seven
+  - neutrino-yoko
+  - neutrino-zundamon
+  - neutrino-zunko
 
 ## Sep 10, 2022
 

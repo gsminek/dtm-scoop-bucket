@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "No.7 NEUTRINO 歌声ライブラリ",
   "homepage": "https://studio-neutrino.com/",
   "license": [
@@ -20,9 +20,9 @@
   "hash": "61681822df456676d83d7d991cffc7196167cbc56cfabcac5e9bdcc20200a8e6",
   "installer": {
     "script": [
-      "$id = \"1SHHQXTfTVSlmBcZ9B2sHIYwYFMyY7Zpf\"",
-      "$filename = \"No.7（NEUTRINO-Library）-v1.2.0.zip\"",
-      "$hash =\"62dc307238af29108877eb559cc2d7e7166834d68df64b34657ced8a12c6a683\"",
+      "$id = \"1_rf7a6y2b2FwENzWWu_8GGD4m_Utu76z\"",
+      "$filename = \"No.7（NEUTRINO-Library）-v1.3.0.zip\"",
+      "$hash =\"bd7fd63cc7461cee786a039d11fe1361fc5d8cb51fbe678c3ace8b2587e402d7\"",
       "$model_dir =\"No.7（NEUTRINO-Library）\\SEVEN\"",
       "$file = $cachedir + \"\\\" + $filename",
       "if(Test-Path -Path $file -PathType Leaf){",
