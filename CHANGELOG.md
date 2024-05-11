@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## May 11, 2023
+
+### Voice synthesis - Update manifests in May 11, 2023
+
+- [VOICEVOX](https://voicevox.hiroshiba.jp/)
+  - voicevox
+  - voicevox-cpu
+
 ## Nov 4, 2022
 
 ### Voice synthesis - New manifests in Nov 4, 2022
