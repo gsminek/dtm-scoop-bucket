@@ -1,8 +1,15 @@
 # CHANGELOG
 
-## May 11, 2023
+## May 23, 2024
 
-### Voice synthesis - Update manifests in May 11, 2023
+### Voice synthesis - Update manifests in May 23, 2024
+
+## May 11, 2024
+
+- [SofTalk](https://w.atwiki.jp/softalk/pages/15.html)
+  - softalk
+
+### Voice synthesis - Update manifests in May 11, 2024
 
 - [VOICEVOX](https://voicevox.hiroshiba.jp/)
   - voicevox
