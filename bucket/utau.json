@@ -12,11 +12,11 @@
       "url": "http://www.vector.co.jp/soft/winnt/art/se480995.html"
     }
   ],
-  "url": "https://utau2008.xrea.jp/utau0419Installer.zip",
-  "hash": "e70480c60cccd25a48d4317e17c8f42b09c511d59d1d51f9d4ede4d1f09e8a34",
+  "url": "https://utau2008.xrea.jp/downloads/utau0419cInstaller.zip",
+  "hash": "cd6697aa2387386615cbed79cc3bd87e183386bfd3d2db351461a0e50e547937",
   "installer": {
     "script": [
-      "$installer = \"utau0419Installer.exe\"",
+      "$installer = \"utau0419cInstaller.exe\"",
       "Start-Process -Wait -PassThru -FilePath \"${dir}\\${installer}\" -ArgumentList /Q,\"/T:${dir}\",/C",
       "Start-Process -Wait -PassThru -FilePath \"${dir}\\setup.exe\" -ArgumentList /i,\"${dir}\\utaustup.msi\",/norestart,MSIINSTALLPERUSER=1,\"TARGETDIR=${dir}\\utau\""
     ]
