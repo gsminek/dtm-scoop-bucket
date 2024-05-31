@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## May 31, 2024
+
+### Voice synthesis - Update manifests in May 31, 2024
+
+- [歌声合成ツールUTAU](http://utau2008.web.fc2.com/index.html)
+  - utau
+
 ## May 23, 2024
 
 ### Voice synthesis - Update manifests in May 23, 2024
