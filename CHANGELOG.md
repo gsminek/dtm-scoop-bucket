@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## June 16, 2024
+
+### DTM - Update manifests in June 16, 2024
+
+- [Image Line Software](https://www.image-line.com/)
+  - flstudio
+
 ## May 31, 2024
 
 ### Voice synthesis - Update manifests in May 31, 2024
