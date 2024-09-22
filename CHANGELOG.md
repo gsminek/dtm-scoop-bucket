@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Sep 27, 2024
+
+### DTM - Update manifests in Sep 27, 2024
+
+- [Image Line Software](https://www.image-line.com/)
+  - Remove flstudio
+    - Download URL response HTTP STATUS CODE 403.
+
 ## June 16, 2024
 
 ### DTM - Update manifests in June 16, 2024
