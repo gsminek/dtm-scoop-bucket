@@ -19,6 +19,7 @@
   - A test program for Visual Basic 6 SP6 redistributable files.
 - utau-nagonemako-utau
 - utau-momone-utau
+- utau-man2-utau
 - utau-koe-utau
 
 ## Sep 27, 2024
