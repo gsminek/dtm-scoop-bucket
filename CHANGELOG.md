@@ -17,6 +17,7 @@
 
 - vb6rtest
   - A test program for Visual Basic 6 SP6 redistributable files.
+- utau-nagonemako-utau
 
 ## Sep 27, 2024
 
