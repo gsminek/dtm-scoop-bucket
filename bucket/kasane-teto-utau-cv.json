@@ -1,11 +1,11 @@
 {
   "version": "100619",
   "description": "TWINDRILL 重音テト　単独音",
-  "homepage": "https://kasaneteto.jp/ongen_down.html",
+  "homepage": "https://kasaneteto.jp/utau/",
   "license": [
     {
       "identifier": "Proprietary",
-      "url": "https://kasaneteto.jp/guide_ongen.html"
+      "url": "https://kasaneteto.jp/guideline/"
     }
   ],
   "url": "https://kasaneteto.jp/ongendl/index.cgi/tandoku/TETO-tandoku-100619.zip",

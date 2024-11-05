@@ -1,11 +1,11 @@
 {
   "version": "110401",
   "description": "TWINDRILL 重音テト　統合",
-  "homepage": "https://kasaneteto.jp/ongen_down.html",
+  "homepage": "https://kasaneteto.jp/utau/",
   "license": [
     {
       "identifier": "Proprietary",
-      "url": "https://kasaneteto.jp/guide_ongen.html"
+      "url": "https://kasaneteto.jp/guideline/"
     }
   ],
   "url": "https://kasaneteto.jp/ongendl/index.cgi/renzoku/TETO-tougou-110401.zip",

@@ -29,6 +29,16 @@
 - voicevox
 - voicevox-cpu
 - asio4all
+- kasane-teto-utau-cv
+- kasane-teto-utau-ex-edgeongen
+- kasane-teto-utau-ex-english
+- kasane-teto-utau-ex-jakuongen
+- kasane-teto-utau-ex-namerakaongen
+- kasane-teto-utau-ex-rikimitan
+- kasane-teto-utau-ex-sakebi
+- kasane-teto-utau-ex-sasayakitan
+- kasane-teto-utau-ex-sasayakitougou
+- kasane-teto-utau-vcv
 
 ## Sep 27, 2024
 
