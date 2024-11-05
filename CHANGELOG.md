@@ -21,6 +21,7 @@
 - utau-momone-utau
 - utau-man2-utau
 - utau-koe-utau
+- utau-defota-utau
 
 ## Sep 27, 2024
 
