@@ -18,6 +18,10 @@
       "hash": "999be1557c910583ebbd3a4ade490ef1275467c1e12bdc4d1ffae0f9f79c74bc"
     }
   },
+  "persist": [
+    "Singers",
+    "Plugins"
+  ],
   "shortcuts": [
     [
       "OpenUtau.exe",
