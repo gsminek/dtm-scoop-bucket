@@ -28,6 +28,7 @@
 - openutau
 - voicevox
 - voicevox-cpu
+- asio4all
 
 ## Sep 27, 2024
 
