@@ -26,6 +26,8 @@
 ### DTM - Update manifests in Nov 05, 2024
 
 - openutau
+- voicevox
+- voicevox-cpu
 
 ## Sep 27, 2024
 
