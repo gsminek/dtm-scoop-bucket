@@ -15,31 +15,40 @@
 
 ### DTM - New manifests in Nov 05, 2024
 
-- vb6rtest
-  - A test program for Visual Basic 6 SP6 redistributable files.
-- utau-nagonemako-utau
-- utau-momone-utau
-- utau-man2-utau
-- utau-koe-utau
-- utau-defota-utau
-- kasane-teto-openutau
+- [H.M.PAGE](https://www.hmpage.jp/index.htm)
+  - vb6rtest
+    - A test program for Visual Basic 6 SP6 redistributable files.
+- [歌声合成ツールUTAU](http://utau2008.web.fc2.com/index.html)
+  - utau-nagonemako-utau
+  - utau-momone-utau
+  - utau-man2-utau
+  - utau-koe-utau
+  - utau-defota-utau
+- [重音テト](https://kasaneteto.jp/)
+  - kasane-teto-openutau
+- [gRainbow](https://github.com/StrangeLoopsAudio/gRainbow)
+  - grainbow
 
 ### DTM - Update manifests in Nov 05, 2024
 
-- openutau
-- voicevox
-- voicevox-cpu
-- asio4all
-- kasane-teto-utau-cv
-- kasane-teto-utau-ex-edgeongen
-- kasane-teto-utau-ex-english
-- kasane-teto-utau-ex-jakuongen
-- kasane-teto-utau-ex-namerakaongen
-- kasane-teto-utau-ex-rikimitan
-- kasane-teto-utau-ex-sakebi
-- kasane-teto-utau-ex-sasayakitan
-- kasane-teto-utau-ex-sasayakitougou
-- kasane-teto-utau-vcv
+- [OpenUtau](http://www.openutau.com/)
+  - openutau
+- [VOICEVOX](https://voicevox.hiroshiba.jp/)
+  - voicevox
+  - voicevox-cpu
+- [ASIO4ALL](https://www.asio4all.org/)
+  - asio4all
+- [重音テト](https://kasaneteto.jp/)
+  - kasane-teto-utau-cv
+  - kasane-teto-utau-ex-edgeongen
+  - kasane-teto-utau-ex-english
+  - kasane-teto-utau-ex-jakuongen
+  - kasane-teto-utau-ex-namerakaongen
+  - kasane-teto-utau-ex-rikimitan
+  - kasane-teto-utau-ex-sakebi
+  - kasane-teto-utau-ex-sasayakitan
+  - kasane-teto-utau-ex-sasayakitougou
+  - kasane-teto-utau-vcv
 
 ## Sep 27, 2024
 
