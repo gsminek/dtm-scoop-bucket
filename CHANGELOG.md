@@ -2,6 +2,17 @@
 
 ## Nov 05, 2024
 
+### DTM - Breaking chamges with manifests in Nov 05, 2024
+
+- [歌声合成ツールUTAU](http://utau2008.web.fc2.com/index.html)
+  - utau
+    - v0.4.19(c) still have an install issue on Windows 11 23H2
+    - Use the archive instead of the installer.
+      - Remove Visual Basic 6 redistrubutables installer.
+      - Changed persist/utau directory structure.
+        - Move the directory utau/utau/voice to utau/voice.
+        - This change effect to all *-utau manifests.
+
 ### DTM - New manifests in Nov 05, 2024
 
 - vb6rtest

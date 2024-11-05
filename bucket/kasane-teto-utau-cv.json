@@ -20,14 +20,14 @@
   "installer": {
     "script": [
       "$voice=\"重音テト音声ライブラリー\"",
-      "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\${voice}\" -Destination \"${persist_dir}\\..\\utau\\utau\\voice\"",
+      "Copy-Item -Force -Recurse -Path \"${dir}\\voice\\${voice}\" -Destination \"${persist_dir}\\..\\utau\\voice\"",
       "Remove-Item -Force -Recurse -Path \"${dir}\\voice\\${voice}\""
     ]
   },
   "uninstaller": {
     "script": [
       "$voice=\"重音テト音声ライブラリー\"",
-      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\utau\\voice\\${voice}\""
+      "Remove-Item -Force -Recurse -Path \"${persist_dir}\\..\\utau\\voice\\${voice}\""
     ]
   },
   "checkver": "TETO-tandoku-([\\d]+).zip"
