@@ -19,7 +19,8 @@
   },
   "extract_dir": "UTAU0419",
   "persist": [
-    "voice"
+    "voice",
+    "plugins"
   ],
   "shortcuts": [
     [
