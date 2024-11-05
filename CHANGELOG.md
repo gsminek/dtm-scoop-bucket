@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Nov 05, 2024
+
+### DTM - New manifests in Nov 05, 2024
+
+- vb6rtest
+  - A test program for Visual Basic 6 SP6 redistributable files.
+
 ## Sep 27, 2024
 
 ### DTM - Update manifests in Sep 27, 2024
@@ -67,7 +74,7 @@
   - amadeusy-shigure
 - [COEIROINK](https://coeiroink.com/)
   - coeiroink-manaplus
-- [sharevox](https://www.sharevox.app/
+- [sharevox](https://www.sharevox.app/)
   - sharevox-cpu
 
 ### Voice synthesis - Update manifests in Sep 10, 2022
