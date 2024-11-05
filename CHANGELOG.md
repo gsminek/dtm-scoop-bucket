@@ -22,6 +22,7 @@
 - utau-man2-utau
 - utau-koe-utau
 - utau-defota-utau
+- kasane-teto-openutau
 
 ### DTM - Update manifests in Nov 05, 2024
 
