@@ -23,6 +23,10 @@
 - utau-koe-utau
 - utau-defota-utau
 
+### DTM - Update manifests in Nov 05, 2024
+
+- openutau
+
 ## Sep 27, 2024
 
 ### DTM - Update manifests in Sep 27, 2024
