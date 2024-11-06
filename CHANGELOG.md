@@ -6,6 +6,8 @@
 
 - [LMROID](https://lmroidsoftware.wixsite.com/nhoshio)
   - lmroid
+- [VOICEVOX](https://voicevox.hiroshiba.jp/)
+  - voicevox-core-downloader
 
 ## Nov 05, 2024
 
