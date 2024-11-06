@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Nov 06, 2024
+
+### DTM - Update manifests in Nov 06, 2024
+
+- [LMROID](https://lmroidsoftware.wixsite.com/nhoshio)
+  - lmroid
+
 ## Nov 05, 2024
 
 ### DTM - Breaking chamges with manifests in Nov 05, 2024
