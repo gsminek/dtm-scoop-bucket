@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Nov 30, 2024
+
+### DTM - New manifests in Nov 30, 2024
+
+- [KORG](https://www.korg.com/)
+  - korg-kontrol-editor
+  - korg-usb-midi-driver
+
 ## Nov 06, 2024
 
 ### DTM - Update manifests in Nov 06, 2024
