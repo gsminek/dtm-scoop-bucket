@@ -4,6 +4,8 @@
 
 ### DTM - Update manifests in Dec 15, 2024
 
+- [Bandlab](https://www.bandlab.com/)
+  - bandlab
 - [Native Instruments](https://www.native-instruments.com/en/)
   - natice-access
     - For 403, Save Native-Access_2.exe file to cache folder as Native-Access_2#3.16.0#eedd74b.exe manually.
