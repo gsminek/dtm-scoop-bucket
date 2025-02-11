@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Feb 12, 2025
+
+### Speach synthesis - New manifests in Feb 12, 2025
+
+- [Aivis Project](https://aivis-project.com/)
+  - aivis-speech.json
+
 ## Dec 15, 2024
 
 ### DTM - Update manifests in Dec 15, 2024
