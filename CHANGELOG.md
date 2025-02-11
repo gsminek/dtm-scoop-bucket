@@ -2,6 +2,12 @@
 
 ## Feb 12, 2025
 
+### DTM - Update manifests in Feb 12, 2025
+
+- [iZotope](https://www.izotope.com/)
+  - izotope-portal
+    - Change the install source to winget.
+
 ### Speach synthesis - New manifests in Feb 12, 2025
 
 - [Aivis Project](https://aivis-project.com/)
