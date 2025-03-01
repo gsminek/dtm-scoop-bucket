@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Mar 1, 2025
+
+### DTM - New manifests in Mar 1, 2025
+
+- [Coderium](https://coderium.com/)
+  - soundengine-free
+
 ## Feb 12, 2025
 
 ### DTM - Update manifests in Feb 12, 2025
