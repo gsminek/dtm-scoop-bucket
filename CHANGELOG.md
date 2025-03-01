@@ -2,6 +2,11 @@
 
 ## Mar 1, 2025
 
+### Speach synthesis - Update manifests in Mar 1, 2025
+
+- [Aivis Project](https://aivis-project.com/)
+  - aivis-speech
+
 ### DTM - New manifests in Mar 1, 2025
 
 - [Coderium](https://coderium.com/)
@@ -18,7 +23,7 @@
 ### Speach synthesis - New manifests in Feb 12, 2025
 
 - [Aivis Project](https://aivis-project.com/)
-  - aivis-speech.json
+  - aivis-speech
 
 ## Dec 15, 2024
 
