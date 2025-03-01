@@ -2,10 +2,12 @@
 
 ## Mar 1, 2025
 
-### Speach synthesis - Update manifests in Mar 1, 2025
+### Speach synthesis - New manifests in Mar 1, 2025
 
 - [Aivis Project](https://aivis-project.com/)
-  - aivis-speech
+  - aivisspeech
+    - Change the manifest name from aivis-speech
+  - aivisspeech-engine
 
 ### DTM - New manifests in Mar 1, 2025
 
