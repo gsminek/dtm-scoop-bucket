@@ -2,6 +2,13 @@
 
 ## Mar 2, 2025
 
+### DTM - Update manifests in Mar 2, 2025
+
+- [VOICEVOX](https://voicevox.hiroshiba.jp/)
+  - voicevox
+  - voicevox-cpu
+  - voicevox-core-downloader
+
 ### Speach synthesis - Remove manifests in Mar 2, 2025
 
 - [AmadeuSY](https://airesearcher113.wixsite.com/amadeusy)
