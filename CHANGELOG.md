@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## Mar 2, 2025
+
+### Speach synthesis - Remove manifests in Mar 2, 2025
+
+- [AmadeuSY](https://airesearcher113.wixsite.com/amadeusy)
+  - amadeusy
+  - amadeusy-*
+    - The project suspended.
+- [COEIROINK](https://coeiroink.com/)
+  - coeiroink
+  - coeiroink-*
+    - Cannot get download urls.
+
 ## Mar 1, 2025
 
 ### Speach synthesis - New manifests in Mar 1, 2025
@@ -468,3 +481,5 @@
   - OneDrive からのダウンロードが必要
 - [TALQu](https://haruqa.booth.pm/items/2755336)
   - Booth からのダウンロードが必要
+- [COEIROINK](https://coeiroink.com/)
+  - DropBox / Booth からのダウンロードが必要
