@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## May 11, 2025
+
+### Voice synthesis - New manifests in May 11, 2025
+
+- [饅頭遣いのおもちゃ箱](https://manjubox.net/)
+  - ymm4
+  - ymm4-lite
+
 ## Mar 8, 2025
 
 ### Voice synthesis - Update manifests in Mar 3, 2025
@@ -16,7 +24,7 @@
   - voicevox-cpu
   - voicevox-core-downloader
 
-### Voice synthesis- Remove manifests in Mar 2, 2025
+### Voice synthesis - Remove manifests in Mar 2, 2025
 
 - [AmadeuSY](https://airesearcher113.wixsite.com/amadeusy)
   - amadeusy
@@ -29,7 +37,7 @@
 
 ## Mar 1, 2025
 
-### Voice synthesis- New manifests in Mar 1, 2025
+### Voice synthesis - New manifests in Mar 1, 2025
 
 - [Aivis Project](https://aivis-project.com/)
   - aivisspeech
@@ -49,7 +57,7 @@
   - izotope-portal
     - Change the install source to winget.
 
-### Voice synthesis- New manifests in Feb 12, 2025
+### Voice synthesis - New manifests in Feb 12, 2025
 
 - [Aivis Project](https://aivis-project.com/)
   - aivis-speech
@@ -497,3 +505,5 @@
   - Booth からのダウンロードが必要
 - [COEIROINK](https://coeiroink.com/)
   - DropBox / Booth からのダウンロードが必要
+- [aivmlib](bucket/aivmlib.json)
+  - 依存関係の [onnx](https://github.com/onnx/onnx) のコンパイルに失敗

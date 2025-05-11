@@ -1,0 +1,33 @@
+{
+  "version": "1.0.1",
+  "description": "AIVIS aivmlib",
+  "homepage": "https://pypi.org/project/aivmlib/",
+  "license": [
+    {
+      "identifier": "MIT",
+      "url": "https://github.com/Aivis-Project/aivmlib/blob/master/LICENSE"
+    }
+  ],
+  "notes": [
+    "onnx のネイティブモジュールのコンパイルに Microsoft Visual C++ Compiler と CMake のインストールが必要です。",
+    "https://learn.microsoft.com/ja-jp/visualstudio/install/install-visual-studio?view=vs-2022",
+    "VC++ をインストール後、x64 Native Tools Command Prompt for VS 2022 を開いてインストールしてください。"
+  ],
+  "url": "https://raw.githubusercontent.com/Aivis-Project/aivmlib/refs/heads/master/LICENSE",
+  "hash": "",
+  "depends": [
+    "python"
+  ],
+  "installer": {
+    "script": [
+      "python3 -m pip install onnxruntime",
+      "python3 -m pip install aivmlib"
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "python3 -m pip uninstall -y aivmlib"
+    ]
+  },
+  "checkver": "aivmlib ([\\d\\.]+)"
+}
