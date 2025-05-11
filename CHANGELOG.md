@@ -7,6 +7,13 @@
 - [饅頭遣いのおもちゃ箱](https://manjubox.net/)
   - ymm4
   - ymm4-lite
+- Microsoft Media / Image extensions
+  - ms-heif-image-extension
+  - ms-mpeg-2-video-extensions
+  - ms-raw-image-extension
+  - ms-vp9-video-extensions
+  - ms-web-media-extension
+  - ms-webp-image-extension
 
 ## Mar 8, 2025
 
@@ -505,5 +512,5 @@
   - Booth からのダウンロードが必要
 - [COEIROINK](https://coeiroink.com/)
   - DropBox / Booth からのダウンロードが必要
-- [aivmlib](bucket/aivmlib.json)
+- [aivmlib](https://github.com/Aivis-Project/aivmlib)
   - 依存関係の [onnx](https://github.com/onnx/onnx) のコンパイルに失敗
